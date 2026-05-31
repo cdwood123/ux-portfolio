@@ -1,0 +1,40 @@
+import '../styles/components/Footer.css'
+
+export default function Footer() {
+  return (
+    <footer className="footer">
+      <div className="footer__inner container">
+        <p className="footer__copy caption">
+          Designed &amp; built by [Your Name] · 2026
+        </p>
+        <nav className="footer__links" aria-label="Social links">
+          {/* REPLACE: update href values with your real profile URLs */}
+          <a
+            href="https://linkedin.com"
+            className="footer__link caption"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com"
+            className="footer__link caption"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+          <a
+            href="/resume.pdf"
+            className="footer__link caption"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resume
+          </a>
+        </nav>
+      </div>
+    </footer>
+  )
+}

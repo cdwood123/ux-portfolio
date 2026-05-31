@@ -1,0 +1,155 @@
+.about-page {
+  padding: var(--space-3xl) 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: var(--space-3xl);
+  align-items: start;
+}
+
+/* Left column */
+.about-bio__name {
+  margin-bottom: var(--space-xl);
+}
+
+.about-bio__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-2xl);
+}
+
+.about-bio__para {
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+.about-bio__para--placeholder {
+  color: var(--text-subtle);
+  font-style: italic;
+}
+
+/* Philosophy */
+.about-philosophy {
+  padding-top: var(--space-xl);
+  border-top: 0.5px solid var(--border-default);
+}
+
+.about-philosophy__label {
+  margin-bottom: var(--space-lg);
+}
+
+.about-philosophy__statements {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.about-philosophy__statement {
+  border-left: 2px solid var(--coral-400);
+  padding-left: 14px;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Right column */
+.about-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+/* Skills */
+.about-skills__label {
+  margin-bottom: var(--space-md);
+}
+
+.about-skills__groups {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.about-skills__group-heading {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+  margin-bottom: var(--space-sm);
+}
+
+.about-skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.about-skills__item {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  padding: 3px 8px;
+}
+
+/* Contact */
+.about-contact {
+  padding-top: var(--space-xl);
+  border-top: 0.5px solid var(--border-default);
+}
+
+.about-contact__label {
+  margin-bottom: var(--space-md);
+}
+
+.about-contact__links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.about-contact__link {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--coral-400);
+  text-decoration: none;
+  transition: color var(--ease-default);
+}
+
+.about-contact__link:hover {
+  color: var(--coral-600);
+}
+
+.about-contact__availability {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-muted);
+  line-height: 1.5;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--bg-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-default);
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+}

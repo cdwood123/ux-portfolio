@@ -1,0 +1,48 @@
+export const workItems = [
+  {
+    slug: 'project-alpha',
+    title: 'Project Alpha',
+    problem: 'Data visualization · 0-to-1',
+    tags: ['UX strategy', 'AI-assisted'],
+    categories: ['Product', 'AI/UX'],
+    company: '[Company]',
+    role: 'Lead Product Designer',
+    year: '2024',
+    duration: '6 months',
+  },
+  {
+    slug: 'project-beta',
+    title: 'Project Beta',
+    problem: 'Product design · Systems',
+    tags: ['Design systems'],
+    categories: ['Product', 'Systems'],
+    company: '[Company]',
+    role: 'Senior Product Designer',
+    year: '2023',
+    duration: '8 months',
+  },
+  {
+    slug: 'project-gamma',
+    title: 'Project Gamma',
+    problem: 'Enterprise SaaS · Research',
+    tags: ['User research'],
+    categories: ['Research'],
+    company: '[Company]',
+    role: 'Product Designer',
+    year: '2023',
+    duration: '4 months',
+  },
+  {
+    slug: 'project-delta',
+    title: 'Project Delta',
+    problem: 'AI product · 0-to-1',
+    tags: ['AI/UX', 'Prototyping'],
+    categories: ['Product', 'AI/UX'],
+    company: '[Company]',
+    role: 'Lead Product Designer',
+    year: '2024',
+    duration: '5 months',
+  },
+]
+
+export const filterCategories = ['All', 'Product', 'AI/UX', 'Research', 'Systems']

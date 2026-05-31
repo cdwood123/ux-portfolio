@@ -1,0 +1,86 @@
+.lab-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  break-inside: avoid;
+  transition: border-color var(--ease-default);
+}
+
+.lab-card:hover {
+  border-color: var(--border-strong);
+}
+
+.lab-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.lab-card__icon {
+  font-size: 20px;
+  color: var(--coral-400);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.lab-card__type {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+  padding-top: 2px;
+}
+
+.lab-card__title {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.lab-card__desc {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.lab-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  margin-top: var(--space-xs);
+}
+
+.lab-card__link {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--coral-400);
+  text-decoration: none;
+  transition: color var(--ease-default);
+}
+
+.lab-card__link:hover {
+  color: var(--coral-600);
+}
+
+/* Home lab preview — compact horizontal layout icon above text */
+.lab-card--preview {
+  gap: var(--space-md);
+}
+
+.lab-card--preview .lab-card__icon {
+  font-size: 24px;
+  margin-bottom: var(--space-xs);
+}

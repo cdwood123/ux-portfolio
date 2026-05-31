@@ -1,0 +1,33 @@
+.lab-page {
+  padding: var(--space-3xl) 0;
+}
+
+.lab-page__header {
+  margin-bottom: var(--space-2xl);
+  max-width: 640px;
+}
+
+.lab-page__desc {
+  margin-top: var(--space-md);
+  font-family: var(--font-ui);
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Masonry via CSS columns */
+.lab-masonry {
+  column-count: 2;
+  column-gap: var(--space-lg);
+}
+
+.lab-masonry .lab-card {
+  margin-bottom: var(--space-lg);
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .lab-masonry {
+    column-count: 1;
+  }
+}

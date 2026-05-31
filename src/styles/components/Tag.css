@@ -1,0 +1,13 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  background: var(--coral-50);
+  color: var(--coral-600);
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}

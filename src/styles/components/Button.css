@@ -1,0 +1,43 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: var(--radius-pill);
+  padding: 10px 22px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background var(--ease-default), color var(--ease-default), border-color var(--ease-default);
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* Primary — coral filled */
+.btn--primary {
+  background: var(--coral-400);
+  color: #fff;
+  border-color: var(--coral-400);
+}
+
+.btn--primary:hover {
+  background: var(--coral-600);
+  border-color: var(--coral-600);
+}
+
+/* Secondary — outlined */
+.btn--secondary {
+  background: transparent;
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+}
+
+.btn--secondary:hover {
+  border-color: var(--text-muted);
+  color: var(--text-primary);
+}
