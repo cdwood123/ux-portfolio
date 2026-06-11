@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__inner container">
         <p className="footer__copy caption">
-          Designed &amp; built by [Your Name] · 2026
+          Designed &amp; built by Charles Wood · 2026
         </p>
         <nav className="footer__links" aria-label="Social links">
           {/* REPLACE: update href values with your real profile URLs */}

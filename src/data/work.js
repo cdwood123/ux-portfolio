@@ -1,5 +1,16 @@
 export const workItems = [
   {
+    slug: 'enum',
+    title: 'Enum',
+    problem: 'Field data collection · Civic tech · Government',
+    tags: ['Field Research', 'Mobile Design', 'Civic Tech'],
+    categories: ['Product', 'Research'],
+    company: 'Medici Land Governance',
+    role: 'Sole UX Designer',
+    year: '2019–2020',
+    duration: 'Delivered 2021',
+  },
+  {
     slug: 'project-alpha',
     title: 'Project Alpha',
     problem: 'Data visualization · 0-to-1',

@@ -119,11 +119,11 @@ export default function Home() {
       <section className="about-strip" aria-label="About">
         <div className="container">
           <div className="about-strip__inner">
-            <div className="about-strip__avatar" aria-label="[Your Name] initials avatar">
-              YN
+            <div className="about-strip__avatar" aria-label="Charles Wood initials avatar">
+              CW
             </div>
             <div className="about-strip__info">
-              <p className="about-strip__name">[Your Name]</p>
+              <p className="about-strip__name">Charles Wood</p>
               {/* REPLACE: one-sentence bio */}
               <p className="about-strip__bio">
                 Senior Product Designer focused on data products and AI-native workflows.

@@ -15,9 +15,9 @@ export default function Nav() {
     <header>
       <nav className="nav" aria-label="Main navigation">
         <div className="nav__inner container">
-          <Link to="/" className="nav__brand" aria-label="[Your Name] — home">
+          <Link to="/" className="nav__brand" aria-label="Charles Wood — home">
             <span className="nav__dot" aria-hidden="true" />
-            <span className="nav__name">[Your Name]</span>
+            <span className="nav__name">Charles Wood</span>
           </Link>
 
           <div className="nav__links" role="menubar">

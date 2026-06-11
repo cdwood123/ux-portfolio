@@ -27,7 +27,7 @@ export default function About() {
 
           {/* Left — bio + philosophy */}
           <div className="about-left">
-            <h1 className="display-md about-bio__name">[Your Name]</h1>
+            <h1 className="display-md about-bio__name">Charles Wood</h1>
 
             <div className="about-bio__text">
               {/* REPLACE WITH YOUR BIO — paragraph 1 */}
