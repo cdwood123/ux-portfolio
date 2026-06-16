@@ -1,0 +1,61 @@
+.payment-amount-display {
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-md);
+  padding: var(--space-inset-md);
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.payment-amount-group {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+/* type/numeric-md */
+.payment-currency {
+  color: var(--color-text-secondary);
+  font-family: var(--font-ui);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+/* type/numeric-lg */
+.payment-dollars {
+  font-family: var(--font-ui);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+/* type/numeric-md */
+.payment-cents {
+  font-family: var(--font-ui);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.payment-trust-indicator {
+  background: var(--color-trust-secure-bg);
+  border: 1px solid var(--color-trust-secure-border);
+  border-radius: 100px;
+  padding: 6px 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* type/body-sm */
+.payment-trust-label {
+  color: var(--color-trust-secure-text);
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+}

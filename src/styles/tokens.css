@@ -45,4 +45,21 @@
   /* Transitions */
   --ease-default: 200ms ease;
   --ease-slow:    400ms ease;
+
+  /* Cashew token aliases — color-* naming convention */
+  --color-bg-surface:      var(--bg-surface);
+  --color-border-default:  var(--border-default);
+  --color-text-secondary:  var(--text-secondary);
+  --space-inset-md:        var(--space-md);
+
+  /* Financial amount colors */
+  --color-financial-display:  #2C2C2A;
+  --color-financial-positive: #1A7F4F;
+  --color-financial-negative: #C0392B;
+
+  /* Trust / secure badge */
+  --color-trust-secure-bg:     #F0FDF4;
+  --color-trust-secure-border: #BBF7D0;
+  --color-trust-secure-icon:   #16A34A;
+  --color-trust-secure-text:   #15803D;
 }
