@@ -1,4 +1,14 @@
+import cashewScreens from '../assets/case-studies/cashew/cashew-screens.png'
+
 export const workItems = [
+  {
+    slug: 'cashew',
+    title: 'Cashew',
+    problem: 'Payment design system · Token architecture · AI workflow',
+    tags: ['Design Systems', 'Figma', 'Storybook'],
+    categories: ['Systems', 'AI/UX'],
+    image: cashewScreens,
+  },
   {
     slug: 'enum',
     title: 'Enum',

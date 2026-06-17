@@ -1,0 +1,296 @@
+.cashew-page {
+  padding-bottom: var(--space-3xl);
+}
+
+/* 1100px outer container */
+.cashew-outer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-xl) 0;
+}
+
+/* 800px text constraint */
+.cashew-text-wrap {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---- Sections ---- */
+
+.cashew-section {
+  margin-bottom: var(--space-3xl);
+}
+
+.cashew-section__label {
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-sm);
+  border-bottom: 0.5px solid var(--border-default);
+}
+
+.cashew-section__body {
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+.cashew-section__body p + p {
+  margin-top: var(--space-md);
+}
+
+/* ---- Figures & images ---- */
+
+.cashew-figure {
+  margin: 0;
+}
+
+.cashew-figure--hero {
+  margin-bottom: var(--space-3xl);
+}
+
+.cashew-figure--wide {
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-xl);
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cashew-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-md);
+}
+
+.cashew-caption {
+  margin-top: var(--space-sm);
+  text-align: center;
+}
+
+/* ---- Pipeline diagram ---- */
+
+.cashew-diagram {
+  max-width: 960px;
+  margin: var(--space-xl) auto;
+  padding: var(--space-xl);
+  background: var(--bg-surface);
+  border: 0.5px solid var(--border-default);
+  border-radius: var(--radius-md);
+}
+
+.cashew-pipeline-svg {
+  font-family: var(--font-ui);
+}
+
+/* ---- Pipeline steps list ---- */
+
+.cashew-pipeline-steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+  list-style: none;
+  counter-reset: pipeline;
+}
+
+.cashew-pipeline-step {
+  display: flex;
+  gap: var(--space-md);
+  counter-increment: pipeline;
+}
+
+.cashew-pipeline-step::before {
+  content: counter(pipeline);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-subtle);
+  min-width: 20px;
+  padding-top: 2px;
+  flex-shrink: 0;
+}
+
+.cashew-pipeline-step__title {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+  display: block;
+  margin-bottom: var(--space-xs);
+}
+
+.cashew-pipeline-step__desc {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  display: block;
+}
+
+/* ---- Token architecture blocks ---- */
+
+.cashew-token-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+.cashew-token-block {
+  padding: var(--space-lg);
+  background: var(--bg-surface);
+  border-radius: var(--radius-md);
+  border: 0.5px solid var(--border-default);
+}
+
+.cashew-token-block__label {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: var(--space-sm);
+  letter-spacing: 0.01em;
+}
+
+.cashew-token-block__desc {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.cashew-token-block__desc code {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-primary);
+  background: var(--bg-elevated);
+  padding: 1px 4px;
+  border-radius: var(--radius-sm);
+  border: 0.5px solid var(--border-default);
+}
+
+/* ---- AI callout list ---- */
+
+.cashew-callout-header {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-md);
+}
+
+.cashew-callout-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+  list-style: none;
+}
+
+.cashew-callout-item {
+  padding: var(--space-md) var(--space-lg);
+  border-left: 3px solid var(--border-strong);
+  background: var(--bg-surface);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.cashew-callout-item code {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-primary);
+  background: var(--bg-elevated);
+  padding: 1px 4px;
+  border-radius: var(--radius-sm);
+  border: 0.5px solid var(--border-default);
+}
+
+/* ---- Outcome stats ---- */
+
+.cashew-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-xl);
+}
+
+.cashew-stat {
+  padding: var(--space-lg);
+  background: var(--bg-surface);
+  border: 0.5px solid var(--border-default);
+  border-radius: var(--radius-md);
+}
+
+.cashew-stat__number {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1;
+  margin-bottom: var(--space-sm);
+}
+
+.cashew-stat__desc {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* ---- CTA link ---- */
+
+.cashew-cta {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--coral-400);
+  text-decoration: none;
+  transition: color var(--ease-default);
+}
+
+.cashew-cta:hover {
+  color: var(--coral-600);
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 960px) {
+  .cashew-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .cashew-outer {
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+  }
+
+  .cashew-diagram {
+    padding: var(--space-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .cashew-outer {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+
+  .cashew-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

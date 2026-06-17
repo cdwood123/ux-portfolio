@@ -1,6 +1,13 @@
 import '../styles/components/CaseStudyHero.css'
 
-export default function CaseStudyHero({ title, hook, company, role, year, duration }) {
+export default function CaseStudyHero({ title, hook, company, role, year, duration, metaItems }) {
+  const meta = metaItems || [
+    { label: 'Company', value: company },
+    { label: 'Role', value: role },
+    { label: 'Year', value: year },
+    { label: 'Duration', value: duration },
+  ]
+
   return (
     <section className="cs-hero">
       <div className="container">
@@ -8,22 +15,20 @@ export default function CaseStudyHero({ title, hook, company, role, year, durati
         <h1 className="cs-hero__title display-lg">{title}</h1>
         <p className="cs-hero__hook">{hook}</p>
         <div className="cs-hero__meta">
-          <div className="cs-hero__meta-item">
-            <span className="cs-hero__meta-label">Company</span>
-            <span className="cs-hero__meta-value">{company}</span>
-          </div>
-          <div className="cs-hero__meta-item">
-            <span className="cs-hero__meta-label">Role</span>
-            <span className="cs-hero__meta-value">{role}</span>
-          </div>
-          <div className="cs-hero__meta-item">
-            <span className="cs-hero__meta-label">Year</span>
-            <span className="cs-hero__meta-value">{year}</span>
-          </div>
-          <div className="cs-hero__meta-item">
-            <span className="cs-hero__meta-label">Duration</span>
-            <span className="cs-hero__meta-value">{duration}</span>
-          </div>
+          {meta.map(({ label, value, href }) => (
+            <div key={label} className="cs-hero__meta-item">
+              <span className="cs-hero__meta-label">{label}</span>
+              <span className="cs-hero__meta-value">
+                {href ? (
+                  <a href={href} target="_blank" rel="noopener noreferrer" className="cs-hero__meta-link">
+                    {value}
+                  </a>
+                ) : (
+                  value
+                )}
+              </span>
+            </div>
+          ))}
         </div>
       </div>
     </section>

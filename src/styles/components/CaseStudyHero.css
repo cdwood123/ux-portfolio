@@ -50,3 +50,13 @@
   font-weight: 400;
   color: var(--text-secondary);
 }
+
+.cs-hero__meta-link {
+  color: var(--coral-400);
+  text-decoration: none;
+  transition: color var(--ease-default);
+}
+
+.cs-hero__meta-link:hover {
+  color: var(--coral-600);
+}

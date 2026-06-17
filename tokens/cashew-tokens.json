@@ -1,0 +1,408 @@
+{
+  "$metadata": {
+    "tokenSetOrder": ["primitives", "semantic"]
+  },
+  "primitives": {
+    "brand": {
+      "50":  { "value": "#EEEEFF", "type": "color" },
+      "100": { "value": "#DCDDFC", "type": "color" },
+      "200": { "value": "#B9BAF9", "type": "color" },
+      "300": { "value": "#9295F3", "type": "color" },
+      "400": { "value": "#6B6FEB", "type": "color" },
+      "500": { "value": "#4F56E3", "type": "color" },
+      "600": { "value": "#3A40CC", "type": "color" },
+      "700": { "value": "#2B2FA8", "type": "color" },
+      "800": { "value": "#1D2178", "type": "color" },
+      "900": { "value": "#12144D", "type": "color" }
+    },
+    "neutral": {
+      "0":   { "value": "#FFFFFF", "type": "color" },
+      "50":  { "value": "#FAF9F7", "type": "color" },
+      "100": { "value": "#F3F1EE", "type": "color" },
+      "200": { "value": "#E6E3DE", "type": "color" },
+      "300": { "value": "#CCC9C3", "type": "color" },
+      "400": { "value": "#A8A49D", "type": "color" },
+      "500": { "value": "#7E7A73", "type": "color" },
+      "600": { "value": "#5A564F", "type": "color" },
+      "700": { "value": "#3D3A34", "type": "color" },
+      "800": { "value": "#23201B", "type": "color" },
+      "900": { "value": "#130F0A", "type": "color" }
+    },
+    "green": {
+      "50":  { "value": "#E8F8F1", "type": "color" },
+      "100": { "value": "#C2EDD9", "type": "color" },
+      "200": { "value": "#85DEBB", "type": "color" },
+      "300": { "value": "#48CE9A", "type": "color" },
+      "400": { "value": "#1AB87A", "type": "color" },
+      "500": { "value": "#0FA869", "type": "color" },
+      "600": { "value": "#0A8A54", "type": "color" },
+      "700": { "value": "#066B41", "type": "color" },
+      "800": { "value": "#034D2E", "type": "color" },
+      "900": { "value": "#01301C", "type": "color" }
+    },
+    "amber": {
+      "50":  { "value": "#FEF7E6", "type": "color" },
+      "100": { "value": "#FDEAB8", "type": "color" },
+      "200": { "value": "#FAD06A", "type": "color" },
+      "300": { "value": "#F5B527", "type": "color" },
+      "400": { "value": "#E8A000", "type": "color" },
+      "500": { "value": "#CC8D00", "type": "color" },
+      "600": { "value": "#A87200", "type": "color" },
+      "700": { "value": "#7D5500", "type": "color" },
+      "800": { "value": "#523800", "type": "color" },
+      "900": { "value": "#2E1F00", "type": "color" }
+    },
+    "red": {
+      "50":  { "value": "#FEF0EF", "type": "color" },
+      "100": { "value": "#FCCFCC", "type": "color" },
+      "200": { "value": "#F99592", "type": "color" },
+      "300": { "value": "#F25B56", "type": "color" },
+      "400": { "value": "#E52D27", "type": "color" },
+      "500": { "value": "#CC2016", "type": "color" },
+      "600": { "value": "#A81612", "type": "color" },
+      "700": { "value": "#7D0F0C", "type": "color" },
+      "800": { "value": "#530907", "type": "color" },
+      "900": { "value": "#2B0403", "type": "color" }
+    },
+    "blue": {
+      "50":  { "value": "#E8F2FD", "type": "color" },
+      "100": { "value": "#C1D9FA", "type": "color" },
+      "200": { "value": "#88B9F7", "type": "color" },
+      "300": { "value": "#4E94F2", "type": "color" },
+      "400": { "value": "#1E72E8", "type": "color" },
+      "500": { "value": "#0D5ED4", "type": "color" },
+      "600": { "value": "#0A4BAD", "type": "color" },
+      "700": { "value": "#073984", "type": "color" },
+      "800": { "value": "#04275C", "type": "color" },
+      "900": { "value": "#021535", "type": "color" }
+    },
+    "trust": {
+      "secure-bg":     { "value": "#F0FDF4", "type": "color" },
+      "secure-border": { "value": "#BBF7D0", "type": "color" },
+      "secure-icon":   { "value": "#16A34A", "type": "color" },
+      "secure-text":   { "value": "#15803D", "type": "color" }
+    },
+    "font-size": {
+      "10": { "value": "10", "type": "fontSizes" },
+      "11": { "value": "11", "type": "fontSizes" },
+      "12": { "value": "12", "type": "fontSizes" },
+      "13": { "value": "13", "type": "fontSizes" },
+      "14": { "value": "14", "type": "fontSizes" },
+      "15": { "value": "15", "type": "fontSizes" },
+      "17": { "value": "17", "type": "fontSizes" },
+      "20": { "value": "20", "type": "fontSizes" },
+      "24": { "value": "24", "type": "fontSizes" },
+      "28": { "value": "28", "type": "fontSizes" },
+      "32": { "value": "32", "type": "fontSizes" },
+      "40": { "value": "40", "type": "fontSizes" },
+      "48": { "value": "48", "type": "fontSizes" }
+    },
+    "font-weight": {
+      "regular":  { "value": "400", "type": "fontWeights" },
+      "medium":   { "value": "500", "type": "fontWeights" },
+      "semibold": { "value": "600", "type": "fontWeights" }
+    },
+    "line-height": {
+      "14": { "value": "14", "type": "lineHeights" },
+      "16": { "value": "16", "type": "lineHeights" },
+      "18": { "value": "18", "type": "lineHeights" },
+      "20": { "value": "20", "type": "lineHeights" },
+      "22": { "value": "22", "type": "lineHeights" },
+      "24": { "value": "24", "type": "lineHeights" },
+      "26": { "value": "26", "type": "lineHeights" },
+      "30": { "value": "30", "type": "lineHeights" },
+      "34": { "value": "34", "type": "lineHeights" },
+      "38": { "value": "38", "type": "lineHeights" },
+      "44": { "value": "44", "type": "lineHeights" },
+      "52": { "value": "52", "type": "lineHeights" }
+    },
+    "space": {
+      "1":  { "value": "4",  "type": "spacing" },
+      "2":  { "value": "8",  "type": "spacing" },
+      "3":  { "value": "12", "type": "spacing" },
+      "4":  { "value": "16", "type": "spacing" },
+      "5":  { "value": "20", "type": "spacing" },
+      "6":  { "value": "24", "type": "spacing" },
+      "8":  { "value": "32", "type": "spacing" },
+      "10": { "value": "40", "type": "spacing" },
+      "12": { "value": "48", "type": "spacing" },
+      "16": { "value": "64", "type": "spacing" },
+      "24": { "value": "96", "type": "spacing" }
+    },
+    "radius": {
+      "xs":   { "value": "4",    "type": "borderRadius" },
+      "sm":   { "value": "8",    "type": "borderRadius" },
+      "md":   { "value": "12",   "type": "borderRadius" },
+      "lg":   { "value": "16",   "type": "borderRadius" },
+      "xl":   { "value": "20",   "type": "borderRadius" },
+      "full": { "value": "9999", "type": "borderRadius" }
+    }
+  },
+  "semantic": {
+    "color": {
+      "bg": {
+        "base":     { "value": "{neutral.50}",  "type": "color", "description": "App background" },
+        "surface":  { "value": "{neutral.0}",   "type": "color", "description": "Cards, sheets, drawers" },
+        "elevated": { "value": "{neutral.0}",   "type": "color", "description": "Elevated surfaces — modals, sheets raised above surface" },
+        "subtle":   { "value": "{neutral.100}", "type": "color", "description": "Input fills, secondary surfaces" },
+        "inverse":  { "value": "{neutral.900}", "type": "color", "description": "Dark overlays, tooltips" }
+      },
+      "text": {
+        "primary":   { "value": "{neutral.800}", "type": "color", "description": "Body copy, headings" },
+        "secondary": { "value": "{neutral.600}", "type": "color", "description": "Labels, captions" },
+        "tertiary":  { "value": "{neutral.400}", "type": "color", "description": "Hints, placeholders" },
+        "disabled":  { "value": "{neutral.300}", "type": "color", "description": "Disabled state" },
+        "inverse":   { "value": "{neutral.0}",   "type": "color", "description": "Text on dark backgrounds" },
+        "brand":     { "value": "{brand.500}",   "type": "color", "description": "Links, interactive text" }
+      },
+      "border": {
+        "default": { "value": "{neutral.200}", "type": "color", "description": "Default borders" },
+        "strong":  { "value": "{neutral.400}", "type": "color", "description": "Emphasis borders" },
+        "focus":   { "value": "{brand.500}",   "type": "color", "description": "Focus rings" }
+      },
+      "brand": {
+        "primary":         { "value": "{brand.500}", "type": "color" },
+        "primary-hover":   { "value": "{brand.600}", "type": "color" },
+        "primary-pressed": { "value": "{brand.700}", "type": "color" },
+        "subtle":          { "value": "{brand.50}",  "type": "color" },
+        "on-primary":      { "value": "{neutral.0}", "type": "color" }
+      },
+      "palette": {
+        "success-subtle": { "value": "{green.50}",  "type": "color" },
+        "success-base":   { "value": "{green.400}", "type": "color" },
+        "success-strong": { "value": "{green.800}", "type": "color" },
+        "success-border": { "value": "{green.200}", "type": "color" },
+        "pending-subtle": { "value": "{amber.50}",  "type": "color" },
+        "pending-base":   { "value": "{amber.400}", "type": "color" },
+        "pending-strong": { "value": "{amber.800}", "type": "color" },
+        "pending-border": { "value": "{amber.200}", "type": "color" },
+        "danger-subtle":  { "value": "{red.50}",    "type": "color" },
+        "danger-base":    { "value": "{red.400}",   "type": "color" },
+        "danger-strong":  { "value": "{red.800}",   "type": "color" },
+        "danger-border":  { "value": "{red.200}",   "type": "color" },
+        "info-subtle":    { "value": "{blue.50}",   "type": "color" },
+        "info-base":      { "value": "{blue.400}",  "type": "color" },
+        "info-strong":    { "value": "{blue.800}",  "type": "color" },
+        "info-border":    { "value": "{blue.200}",  "type": "color" }
+      },
+      "status": {
+        "paid": {
+          "bg":      { "value": "{color.palette.success-subtle}", "type": "color" },
+          "border":  { "value": "{color.palette.success-border}", "type": "color" },
+          "text":    { "value": "{color.palette.success-strong}", "type": "color" },
+          "icon":    { "value": "{color.palette.success-base}",   "type": "color" },
+          "fill":    { "value": "{color.palette.success-base}",   "type": "color" },
+          "on-fill": { "value": "{neutral.0}",                    "type": "color" }
+        },
+        "pending": {
+          "bg":      { "value": "{color.palette.pending-subtle}", "type": "color" },
+          "border":  { "value": "{color.palette.pending-border}", "type": "color" },
+          "text":    { "value": "{color.palette.pending-strong}", "type": "color" },
+          "icon":    { "value": "{color.palette.pending-base}",   "type": "color" },
+          "fill":    { "value": "{color.palette.pending-base}",   "type": "color" },
+          "on-fill": { "value": "{neutral.900}",                  "type": "color", "description": "Dark text on amber fill — passes WCAG AA" }
+        },
+        "failed": {
+          "bg":      { "value": "{color.palette.danger-subtle}", "type": "color" },
+          "border":  { "value": "{color.palette.danger-border}", "type": "color" },
+          "text":    { "value": "{color.palette.danger-strong}", "type": "color" },
+          "icon":    { "value": "{color.palette.danger-base}",   "type": "color" },
+          "fill":    { "value": "{color.palette.danger-base}",   "type": "color" },
+          "on-fill": { "value": "{neutral.0}",                   "type": "color" }
+        },
+        "refunded": {
+          "bg":      { "value": "{neutral.100}", "type": "color", "description": "Neutral — refunded is not an error" },
+          "border":  { "value": "{neutral.300}", "type": "color" },
+          "text":    { "value": "{neutral.700}", "type": "color" },
+          "icon":    { "value": "{neutral.500}", "type": "color" },
+          "fill":    { "value": "{neutral.500}", "type": "color" },
+          "on-fill": { "value": "{neutral.0}",   "type": "color" }
+        },
+        "overdue": {
+          "bg":      { "value": "{color.palette.danger-subtle}", "type": "color" },
+          "border":  { "value": "{color.palette.danger-border}", "type": "color" },
+          "text":    { "value": "{red.700}",                    "type": "color", "description": "Softer than failed/text — overdue is temporal, not transactional" },
+          "icon":    { "value": "{red.300}",                    "type": "color" },
+          "fill":    { "value": "{red.300}",                    "type": "color" },
+          "on-fill": { "value": "{neutral.900}",                "type": "color" }
+        }
+      },
+      "financial": {
+        "positive": { "value": "{green.600}", "type": "color", "description": "Net positive balances, confirmed inflows" },
+        "negative": { "value": "{red.600}",   "type": "color", "description": "Net negative balances, deficits" },
+        "display":  { "value": "{neutral.800}", "type": "color", "description": "Hero amounts — neutral, lets the number stand on its own" },
+        "neutral":  { "value": "{neutral.600}", "type": "color", "description": "Informational amounts, neither positive nor negative" }
+      },
+      "trust": {
+        "secure-bg":     { "value": "{color.trust.secure-bg}",     "type": "color" },
+        "secure-border": { "value": "{color.trust.secure-border}", "type": "color" },
+        "secure-icon":   { "value": "{color.trust.secure-icon}",   "type": "color" },
+        "secure-text":   { "value": "{color.trust.secure-text}",   "type": "color" }
+      }
+    },
+    "space": {
+      "inset": {
+        "xs": { "value": "{space.2}",  "type": "spacing", "description": "Badge, chip padding — 8px" },
+        "sm": { "value": "{space.3}",  "type": "spacing", "description": "Icon button padding — 12px" },
+        "md": { "value": "{space.4}",  "type": "spacing", "description": "Card padding (default) — 16px" },
+        "lg": { "value": "{space.5}",  "type": "spacing", "description": "Screen edge margin — 20px" },
+        "xl": { "value": "{space.6}",  "type": "spacing", "description": "Section padding — 24px" }
+      },
+      "stack": {
+        "xs":  { "value": "{space.1}",  "type": "spacing", "description": "Between tightly related elements — 4px" },
+        "sm":  { "value": "{space.2}",  "type": "spacing", "description": "Icon + label gap — 8px" },
+        "md":  { "value": "{space.3}",  "type": "spacing", "description": "Between list items — 12px" },
+        "lg":  { "value": "{space.4}",  "type": "spacing", "description": "Between form fields — 16px" },
+        "xl":  { "value": "{space.6}",  "type": "spacing", "description": "Between form sections — 24px" },
+        "2xl": { "value": "{space.8}",  "type": "spacing", "description": "Between content sections — 32px" },
+        "3xl": { "value": "{space.12}", "type": "spacing", "description": "Between page blocks — 48px" }
+      },
+      "inline": {
+        "xs": { "value": "{space.1}", "type": "spacing", "description": "4px" },
+        "sm": { "value": "{space.2}", "type": "spacing", "description": "8px" },
+        "md": { "value": "{space.3}", "type": "spacing", "description": "12px" },
+        "lg": { "value": "{space.4}", "type": "spacing", "description": "16px" }
+      }
+    },
+    "radius": {
+      "xs":   { "value": "{radius.xs}",   "type": "borderRadius", "description": "Inline badges — 4px" },
+      "sm":   { "value": "{radius.sm}",   "type": "borderRadius", "description": "Inputs — 8px" },
+      "md":   { "value": "{radius.md}",   "type": "borderRadius", "description": "Buttons — 12px" },
+      "lg":   { "value": "{radius.lg}",   "type": "borderRadius", "description": "Cards — 16px" },
+      "xl":   { "value": "{radius.xl}",   "type": "borderRadius", "description": "Bottom sheets — 20px" },
+      "full": { "value": "{radius.full}", "type": "borderRadius", "description": "Pills, status badges" }
+    },
+    "elevation": {
+      "0": {
+        "value": [],
+        "type": "boxShadow",
+        "description": "Flat — inline elements, backgrounds"
+      },
+      "1": {
+        "value": [
+          { "x": "0", "y": "1", "blur": "3", "spread": "0", "color": "rgba(18,16,13,0.06)", "type": "dropShadow" },
+          { "x": "0", "y": "1", "blur": "2", "spread": "0", "color": "rgba(18,16,13,0.04)", "type": "dropShadow" }
+        ],
+        "type": "boxShadow",
+        "description": "Raised — list cards, transaction rows"
+      },
+      "2": {
+        "value": [
+          { "x": "0", "y": "4", "blur": "12", "spread": "0", "color": "rgba(18,16,13,0.08)", "type": "dropShadow" },
+          { "x": "0", "y": "2", "blur": "4",  "spread": "0", "color": "rgba(18,16,13,0.04)", "type": "dropShadow" }
+        ],
+        "type": "boxShadow",
+        "description": "Floating — tooltips, action menus"
+      },
+      "3": {
+        "value": [
+          { "x": "0", "y": "8", "blur": "24", "spread": "0", "color": "rgba(18,16,13,0.10)", "type": "dropShadow" },
+          { "x": "0", "y": "4", "blur": "8",  "spread": "0", "color": "rgba(18,16,13,0.06)", "type": "dropShadow" }
+        ],
+        "type": "boxShadow",
+        "description": "Overlay — modals, bottom sheets"
+      }
+    },
+    "type": {
+      "display-xl": {
+        "value": {
+          "fontFamily": "Inter",
+          "fontWeight": "{font-weight.semibold}",
+          "fontSize": "{font-size.48}",
+          "lineHeight": "{line-height.52}",
+          "letterSpacing": "0"
+        },
+        "type": "typography",
+        "description": "Transaction hero amounts — $12,540"
+      },
+      "display-lg": {
+        "value": {
+          "fontFamily": "Inter",
+          "fontWeight": "{font-weight.semibold}",
+          "fontSize": "{font-size.32}",
+          "lineHeight": "{line-height.38}",
+          "letterSpacing": "0"
+        },
+        "type": "typography",
+        "description": "Balance display — $1,234.56"
+      },
+      "heading-lg": {
+        "value": {
+          "fontFamily": "Inter",
+          "fontWeight": "{font-weight.semibold}",
+          "fontSize": "{font-size.24}",
+          "lineHeight": "{line-height.30}",
+          "letterSpacing": "0"
+        },
+        "type": "typography",
+        "description": "Page and section headings"
+      },
+      "heading-sm": {
+        "value": {
+          "fontFamily": "Inter",
+          "fontWeight": "{font-weight.semibold}",
+          "fontSize": "{font-size.17}",
+          "lineHeight": "{line-height.22}",
+          "letterSpacing": "0"
+        },
+        "type": "typography",
+        "description": "iOS headline equivalent — card titles"
+      },
+      "body-md": {
+        "value": {
+          "fontFamily": "Inter",
+          "fontWeight": "{font-weight.regular}",
+          "fontSize": "{font-size.15}",
+          "lineHeight": "{line-height.22}",
+          "letterSpacing": "0"
+        },
+        "type": "typography",
+        "description": "Primary body — iOS body text equivalent"
+      },
+      "body-sm": {
+        "value": {
+          "fontFamily": "Inter",
+          "fontWeight": "{font-weight.regular}",
+          "fontSize": "{font-size.13}",
+          "lineHeight": "{line-height.18}",
+          "letterSpacing": "0"
+        },
+        "type": "typography",
+        "description": "Secondary body — metadata, timestamps"
+      },
+      "label-md": {
+        "value": {
+          "fontFamily": "Inter",
+          "fontWeight": "{font-weight.medium}",
+          "fontSize": "{font-size.11}",
+          "lineHeight": "{line-height.14}",
+          "letterSpacing": "0.08em"
+        },
+        "type": "typography",
+        "description": "Overlines and status labels — uppercase tracked"
+      },
+      "numeric-lg": {
+        "value": {
+          "fontFamily": "Inter",
+          "fontWeight": "{font-weight.medium}",
+          "fontSize": "{font-size.20}",
+          "lineHeight": "{line-height.24}",
+          "letterSpacing": "0"
+        },
+        "type": "typography",
+        "description": "Tabular numerals — always use with font-variant-numeric: tabular-nums"
+      },
+      "numeric-sm": {
+        "value": {
+          "fontFamily": "Inter",
+          "fontWeight": "{font-weight.medium}",
+          "fontSize": "{font-size.15}",
+          "lineHeight": "{line-height.20}",
+          "letterSpacing": "0"
+        },
+        "type": "typography",
+        "description": "Row-level amounts — tabular-nums, aligns in transaction lists"
+      }
+    }
+  }
+}
