@@ -31,15 +31,6 @@ export default function Nav() {
               work
             </NavLink>
             <NavLink
-              to="/lab"
-              role="menuitem"
-              className={({ isActive }) =>
-                `nav__link${isActive ? ' nav__link--active' : ''}`
-              }
-            >
-              lab
-            </NavLink>
-            <NavLink
               to="/about"
               role="menuitem"
               className={({ isActive }) =>
@@ -79,14 +70,6 @@ export default function Nav() {
           }
         >
           work
-        </NavLink>
-        <NavLink
-          to="/lab"
-          className={({ isActive }) =>
-            `nav__drawer-link${isActive ? ' nav__drawer-link--active' : ''}`
-          }
-        >
-          lab
         </NavLink>
         <NavLink
           to="/about"

@@ -7,7 +7,6 @@ import CaseStudy from './pages/CaseStudy'
 import Cashew from './pages/Cashew'
 import Enum from './pages/Enum'
 import Trader from './pages/Trader'
-import Lab from './pages/Lab'
 import About from './pages/About'
 
 export default function App() {
@@ -22,7 +21,6 @@ export default function App() {
           <Route path="/work/enum" element={<Enum />} />
           <Route path="/work/trader" element={<Trader />} />
           <Route path="/work/:slug" element={<CaseStudy />} />
-          <Route path="/lab" element={<Lab />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </div>

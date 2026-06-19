@@ -42,14 +42,14 @@ export default function Enum() {
             <p className="enum-section__label label-upper">The stakes</p>
             <div className="enum-section__body">
               <p>
-                In Zambia, a missing or disputed land title isn't a paperwork inconvenience — it
-                can mean losing your home, your farm, or your family's generational wealth with no
-                legal recourse. The government's enumeration process — the systematic door-to-door
-                collection of landowner information — was the gateway to formal property titles for
-                over 17 million people. And it was running on paper, tribal knowledge, and trust
-                that the data coming back from the field was accurate.
+                In Zambia, a missing or disputed land title isn't a paperwork inconvenience —
+                it can result in losing your home, your farm, or your family's generational wealth
+                without any legal recourse. The government's enumeration process, which involves
+                systematic door-to-door collection of landowner information, was designed to provide
+                formal property titles for over 17 million people. However, this process relied
+                heavily on paper, tribal knowledge, and trust that the data received from the field
+                was accurate. Unfortunately, it wasn't always accurate.
               </p>
-              <p>It wasn't always.</p>
             </div>
           </div>
         </section>
@@ -60,14 +60,13 @@ export default function Enum() {
             <p className="enum-section__label label-upper">The problem</p>
             <div className="enum-section__body">
               <p>
-                A test project in 2018 revealed two critical failures. First, there was no data
-                validation — census workers could input anything, it was treated as truth, and
-                months of cleanup work followed. Second, there was no shared picture of the overall
-                process — not internally at Medici, not across the Zambian government agencies
-                involved. Everyone understood their own piece. Nobody held the whole map.
-              </p>
-              <p>
-                When I started discovery, the word I heard most often was <em>murky.</em>
+                A test project conducted in 2018 revealed two critical failures. First, there was a
+                lack of data validation — census workers were able to input anything, and their
+                submissions were accepted as truth, leading to months of data cleanup. Second, there
+                was no cohesive understanding of the overall process; no one within Medici or the
+                Zambian government agencies involved had a comprehensive view of the entire system.
+                Each person understood their own responsibilities, but nobody held the complete
+                picture. During my initial discovery phase, the word I heard most often was "murky."
               </p>
             </div>
           </div>
@@ -79,10 +78,11 @@ export default function Enum() {
             <p className="enum-section__label label-upper">My role</p>
             <div className="enum-section__body">
               <p>
-                I was the sole designer on a cross-functional team working directly with the Zambian
-                government, from field-level census workers up to members of parliament at the
-                Ministry of Natural Lands and Resources. I owned research, information architecture,
-                wireframes, and the final Figma prototype presented to the Ministry for approval.
+                As the sole designer on a cross-functional team, I worked directly with the Zambian
+                government, collaborating with everyone from field-level census workers to members of
+                parliament at the Ministry of Natural Lands and Resources. My responsibilities
+                included conducting research, developing information architecture, creating wireframes,
+                and producing the final Figma prototype presented for approval to the Ministry.
               </p>
             </div>
           </div>
@@ -95,21 +95,20 @@ export default function Enum() {
             <h2 className="enum-subheading">Making the invisible visible</h2>
             <div className="enum-section__body">
               <p>
-                The first design challenge wasn't a screen — it was a shared understanding. Every
-                stakeholder I interviewed knew their own responsibilities clearly, but no one could
-                describe the full process end to end. Institutional knowledge was scattered across
-                people's heads, sticky notes, and disconnected documents.
-              </p>
-              <p>
-                I built a series of story maps to surface and consolidate that knowledge — migrating
-                tools as understanding evolved — until we had one artifact everyone could point to.
-                That story map became the foundation every subsequent design decision was built on.
+                The first design challenge I faced was not about creating a screen, but rather
+                fostering a shared understanding. Every stakeholder I interviewed was clear about
+                their responsibilities, yet none could articulate the complete end-to-end process.
+                Institutional knowledge was scattered among individuals, sticky notes, and
+                disconnected documents. To consolidate this knowledge, I built a series of story
+                maps, gradually migrating tools as understanding evolved, until we developed a single
+                artifact that everyone could refer to. This story map became the foundation upon
+                which all subsequent design decisions were based.
               </p>
             </div>
             <blockquote className="enum-blockquote">
               <p>
-                "Shoutout to Charles for putting everything into the Whimsical file. I can't tell
-                you how invaluable that's been. It makes it even more imperative that we have
+                "Shout out to Charles for putting everything into the Whimsical file. I can't tell
+                you how invaluable that's been. It makes it even more essential that we have
                 meetings like this to capture rich data."
               </p>
               <p className="caption enum-blockquote__attribution">— Martin, GIS Team</p>
@@ -135,16 +134,15 @@ export default function Enum() {
             <h2 className="enum-subheading">Designing for the field</h2>
             <div className="enum-section__body">
               <p>
-                The tablet interface had to work for census workers collecting data door-to-door
-                under real constraints: users who could read but might not know how to sign their
-                name or read a map. Unreliable or nonexistent connectivity. The pressure of moving
-                through dozens of households in a day.
-              </p>
-              <p>
-                The product couldn't rely on a live connection — data had to be stored locally on
-                the device and synced when workers returned to the office. Every interaction had to
-                be operable without technical fluency, and every input had to be designed knowing a
-                human being under time pressure was making it.
+                The tablet interface needed to be effective for census workers collecting data
+                door-to-door under challenging conditions — users who could read but might not know
+                how to sign their names or read a map, all while dealing with unreliable or
+                nonexistent connectivity. There was pressure to move through dozens of households
+                each day. The product could not depend on a live connection; instead, data had to be
+                stored locally on the device and synchronized when workers returned to the office.
+                Every interaction needed to be usable without requiring advanced technical skills,
+                and every input had to be designed with the understanding that a human under time
+                pressure would be making it.
               </p>
             </div>
           </div>
@@ -156,9 +154,9 @@ export default function Enum() {
                 className="enum-img"
               />
               <figcaption className="caption enum-caption">
-                The first question in every new record. Radical simplicity was a deliberate
-                constraint — every screen had to work under time pressure, in the field, with no
-                room for confusion.
+                The first question in every new record emphasized radical simplicity — every screen
+                had to operate effectively under time constraints, in the field, and without
+                confusion.
               </figcaption>
             </figure>
             <figure className="enum-figure">
@@ -168,7 +166,7 @@ export default function Enum() {
                 className="enum-img"
               />
               <figcaption className="caption enum-caption">
-                Plain-language questions, one at a time. The form pattern was designed for users who
+                We used plain-language questions, presented one at a time, to accommodate users who
                 could read but may have limited experience with digital interfaces or formal
                 documents.
               </figcaption>
@@ -182,15 +180,14 @@ export default function Enum() {
             <h2 className="enum-subheading">Building a system that checks itself</h2>
             <div className="enum-section__body">
               <p>
-                The core data integrity problem from the 2018 test project was that human input was
-                treated as ground truth. Our solution reframed validation as a social mechanism:
-                each person could review and verify their own data, and — critically — verify their
-                neighbors' data too. Community members became a check on each other, creating a
-                distributed verification layer that the system alone couldn't provide.
-              </p>
-              <p>
-                We also built a formal dispute resolution flow, so contested records had a path to
-                resolution rather than becoming permanent errors in the dataset.
+                The core data integrity issue identified during the 2018 test was how human input
+                was treated as absolute truth. Our solution reframed validation as a social
+                mechanism: each person could review and verify their own data, as well as verify
+                their neighbors' data. This way, community members became checks on one another,
+                establishing a distributed verification layer that the system alone could not
+                provide. We also developed a formal dispute resolution process, ensuring that
+                contested records had a path to resolution rather than becoming permanent errors in
+                the dataset.
               </p>
             </div>
           </div>
@@ -202,8 +199,9 @@ export default function Enum() {
                 className="enum-img"
               />
               <figcaption className="caption enum-caption">
-                Workers can adjust parcel boundaries using draggable nodes directly on the map.
-                Precision land demarcation — previously done on paper — in a single tap interaction.
+                Workers can adjust parcel boundaries using draggable nodes directly on the map,
+                allowing for precise land demarcation, which was previously done on paper, to be
+                executed with a single tap.
               </figcaption>
             </figure>
             <figure className="enum-figure">
@@ -213,9 +211,9 @@ export default function Enum() {
                 className="enum-img"
               />
               <figcaption className="caption enum-caption">
-                Contested records are tracked as unresolved or resolved disputes, with timestamps
-                and comments. The dispute flow gave community members a formal path to challenge
-                inaccurate data rather than leaving errors in the system permanently.
+                Contested records are tracked as unresolved or resolved disputes, complete with
+                timestamps and comments. The dispute flow provided community members with a formal
+                method to challenge inaccurate data, preventing persistent errors in the system.
               </figcaption>
             </figure>
           </div>
@@ -227,9 +225,9 @@ export default function Enum() {
             <h2 className="enum-subheading">Two interfaces, one data model</h2>
             <div className="enum-section__body">
               <p>
-                The web interface was built for government administrators managing the process at
-                scale — a fundamentally different context from the field. Where the tablet stripped
-                everything back to single questions and large tap targets, the web surface exposed
+                The web interface was designed for government administrators managing the process at
+                scale — a fundamentally different context from the field. While the tablet stripped
+                everything back to single questions and large tap targets, the web interface revealed
                 the full complexity of a land record.
               </p>
             </div>
@@ -241,8 +239,8 @@ export default function Enum() {
               className="enum-img"
             />
             <figcaption className="caption enum-caption">
-              The web interface surfaces the full complexity of a land record — ownership details,
-              encumbrances, supporting documents, disputes — that was deliberately abstracted away
+              The web interface displays all aspects of a land record — ownership details,
+              encumbrances, supporting documents, and disputes — which were intentionally omitted
               from the tablet experience. Two interfaces, two audiences, one data model.
             </figcaption>
           </figure>
@@ -254,13 +252,10 @@ export default function Enum() {
             <p className="enum-section__label label-upper">The outcome</p>
             <div className="enum-section__body">
               <p>
-                The prototype was presented to the Ministry of Natural Lands and Resources in summer
-                2020. They approved it.
-              </p>
-              <p>
-                Enum was deployed in time for the 2021 census. Tens of thousands of households
-                across the 6 districts of Lusaka Province were recorded using the system — with
-                additional provinces to follow.
+                The prototype was presented to the Ministry of Natural Lands and Resources in the
+                summer of 2020, and it received approval. Enum was launched in time for the 2021
+                census, allowing tens of thousands of households across the six districts of Lusaka
+                Province to be recorded using the system, with additional provinces set to follow.
               </p>
             </div>
           </div>
@@ -272,10 +267,11 @@ export default function Enum() {
             <p className="enum-section__label label-upper">What I'd do differently</p>
             <div className="enum-section__body">
               <p>
-                This project moved fast, and I was focused on the work. In hindsight I'd invest
-                more deliberately in executive alignment — not just at key milestones, but as an
-                ongoing practice. The most technically sound design still needs organizational
-                buy-in to ship smoothly, and that's a relationship you build before you need it.
+                This project progressed rapidly, and I was focused on the work at hand. In
+                hindsight, I would prioritize executive alignment more deliberately — not just at
+                key milestones, but as an ongoing practice. Even the most technically sound design
+                needs organizational support to be implemented smoothly, and that support is a
+                relationship that should be cultivated in advance.
               </p>
             </div>
           </div>
