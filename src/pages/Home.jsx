@@ -44,13 +44,13 @@ export default function Home() {
             {/* Left column */}
             <div className="hero__left">
               <div className="fade-up" style={{ animationDelay: '0ms' }}>
-                <span className="hero__pill" aria-label="AI-native practice">
-                  ✦ AI-native practice
-                </span>
+                <span className="hero__pill">Engineer → UX</span>
+                <span className="hero__pill">Design Systems</span>
+                <span className="hero__pill">Complex Systems</span>
               </div>
 
               <div className="fade-up" style={{ animationDelay: '80ms' }}>
-                <p className="label-upper">Product Designer</p>
+                <p className="label-upper">Product Designer specializing in data products and AI-native workflows.</p>
               </div>
 
               <div className="fade-up" style={{ animationDelay: '160ms' }}>
