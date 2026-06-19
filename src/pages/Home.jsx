@@ -98,7 +98,7 @@ export default function Home() {
       </section>
 
       {/* Lab preview */}
-      <section className="lab-preview" aria-label="Lab experiments">
+      {/* <section className="lab-preview" aria-label="Lab experiments">
         <div className="container">
           <SectionHeader
             label="Lab — experiments &amp; explorations"
@@ -110,7 +110,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* About strip */}
       <section className="about-strip" aria-label="About">
