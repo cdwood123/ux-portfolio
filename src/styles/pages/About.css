@@ -18,10 +18,10 @@
 }
 
 .about-bio__portrait {
-  width: 120px;
-  height: 120px;
+  width: 192px;
+  height: 192px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center top;
 }
 

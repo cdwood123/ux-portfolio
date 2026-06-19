@@ -35,29 +35,20 @@ export default function About() {
 
             <div className="about-bio__text">
               <p className="about-bio__para">
-                I'm a product designer with an engineering degree and a decade of experience across
-                physical products, enterprise UX, and branding. I started my career doing structural
-                analysis and mechanical design before pivoting to UX in 2019. Since then I've led
-                design on 20+ freelance projects, from land administration tools deployed in Zambia
-                to payment products for cash-based service businesses. The through-line is the same:
-                complex systems, real constraints, users who need clarity more than decoration.
+                I started my career as a design engineer, focusing on structural analysis and finite
+                element analysis, where precise tolerances are essential. In 2019, I transitioned to
+                user experience (UX) design, and this engineering background informs my work.
               </p>
               <p className="about-bio__para">
-                Technical products attract me because the problems are real. When your users are
-                engineers or field operators, confusion has consequences, and vague wireframes don't
-                survive first contact with the system. I've learned to start with the constraint,
-                not the canvas: what does this user need to accomplish, what does the system allow,
-                and where do those two things fail to meet? That friction is where the design work
-                actually lives.
+                I thrive in creating technical products for users like engineers and field operators,
+                where confusion can be costly. I have worked on over 20 projects, including land
+                administration tools in Zambia and payment solutions for cash-based businesses, all
+                centered around complex systems and the need for clarity.
               </p>
               <p className="about-bio__para">
-                What sets me apart in a UX role is that I came from engineering. I'm a certified
-                SolidWorks professional, have done FEA and CFD analysis, and spent years designing
-                to tolerances and manufacturability requirements. That background means I can sit
-                with an engineering team and understand what they're building, not just what they're
-                asking for. Layered on top is an AI-native workflow: I use Claude Code and Figma MCP
-                to compress the design-to-prototype loop so I can stay focused on decisions that
-                actually require judgment.
+                I incorporate AI tools like Claude Code and Figma MCP into my design process to
+                speed up prototyping while allowing me to focus on the critical challenges that
+                require a designer's insight.
               </p>
             </div>
 
