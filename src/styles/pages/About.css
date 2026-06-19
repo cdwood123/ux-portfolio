@@ -44,6 +44,24 @@
   line-height: 1.75;
 }
 
+/* Resume button */
+.about-resume-btn {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background: var(--coral-400);
+  border-radius: var(--radius-pill);
+  padding: 10px 24px;
+  text-decoration: none;
+  transition: background var(--ease-default);
+}
+
+.about-resume-btn:hover {
+  background: var(--coral-600);
+}
+
 /* Right column */
 .about-sidebar {
   display: flex;

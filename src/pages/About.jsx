@@ -46,6 +46,15 @@ export default function About() {
               </p>
             </div>
 
+            <a
+              href="/charles_wood_resume.pdf"
+              className="about-resume-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download Resume
+            </a>
+
           </div>
 
           {/* Right — skills + contact */}

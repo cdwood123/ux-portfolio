@@ -39,6 +39,15 @@ export default function Nav() {
             >
               about
             </NavLink>
+            <a
+              href="/charles_wood_resume.pdf"
+              className="nav__link"
+              role="menuitem"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              resume
+            </a>
             <Link to="/about#contact" className="nav__cta" role="menuitem">
               get in touch
             </Link>
@@ -79,6 +88,14 @@ export default function Nav() {
         >
           about
         </NavLink>
+        <a
+          href="/charles_wood_resume.pdf"
+          className="nav__drawer-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          resume
+        </a>
         <Link to="/about#contact" className="nav__drawer-cta">
           get in touch
         </Link>
