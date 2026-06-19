@@ -69,9 +69,6 @@ export default function Home() {
                 <Button to="/work" variant="primary">
                   View selected work
                 </Button>
-                <Button to="/lab" variant="secondary">
-                  See the lab →
-                </Button>
               </div>
             </div>
 
