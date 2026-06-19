@@ -61,7 +61,7 @@ export default function Home() {
 
               <div className="fade-up" style={{ animationDelay: '240ms' }}>
                 <p className="hero__statement">
-                  With an AI-native process that fundamentally changes the work.
+                  Built on engineering intuition and AI as infrastructure.
                 </p>
               </div>
 
@@ -121,14 +121,13 @@ export default function Home() {
             </div>
             <div className="about-strip__info">
               <p className="about-strip__name">Charles Wood</p>
-              {/* REPLACE: one-sentence bio */}
               <p className="about-strip__bio">
-                Senior Product Designer focused on data products and AI-native workflows.
+                Product Designer specializing in data products and AI-native workflows.
               </p>
               <div className="about-strip__chips">
-                <span className="about-strip__chip">Seattle, WA</span>
-                <span className="about-strip__chip">Open to DataCor</span>
-                <span className="about-strip__chip">React · Figma · Claude</span>
+                <span className="about-strip__chip">Engineer → UX</span>
+                <span className="about-strip__chip">Design Systems</span>
+                <span className="about-strip__chip">Complex Systems</span>
               </div>
             </div>
           </div>
