@@ -1,5 +1,6 @@
 import cashewScreens from '../assets/case-studies/cashew/cashew-screens.png'
 import traderDash from '../assets/case-studies/trader/dash_triptych.png'
+import enumEditBoundary from '../assets/case-studies/enum/Edit_Boundary.png'
 
 export const workItems = [
   {
@@ -16,6 +17,7 @@ export const workItems = [
     problem: 'Field data collection · Civic tech · Government',
     tags: ['Field Research', 'Mobile Design', 'Civic Tech'],
     categories: ['Product', 'Research'],
+    image: enumEditBoundary,
     company: 'Medici Land Governance',
     role: 'Sole UX Designer',
     year: '2019–2020',
