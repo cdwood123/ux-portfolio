@@ -20,8 +20,8 @@
 .about-bio__portrait {
   width: 192px;
   height: 192px;
-  border-radius: 50%;
-  object-fit: contain;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
   object-position: center top;
 }
 
@@ -42,32 +42,6 @@
   font-weight: 400;
   color: var(--text-secondary);
   line-height: 1.75;
-}
-
-/* Philosophy */
-.about-philosophy {
-  padding-top: var(--space-xl);
-  border-top: 0.5px solid var(--border-default);
-}
-
-.about-philosophy__label {
-  margin-bottom: var(--space-lg);
-}
-
-.about-philosophy__statements {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-lg);
-}
-
-.about-philosophy__statement {
-  border-left: 2px solid var(--coral-400);
-  padding-left: 14px;
-  font-family: var(--font-ui);
-  font-size: 14px;
-  font-weight: 400;
-  color: var(--text-secondary);
-  line-height: 1.6;
 }
 
 /* Right column */

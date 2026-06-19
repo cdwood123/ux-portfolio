@@ -14,19 +14,13 @@ const skills = {
   'AI & TOOLS': ['Claude', 'Claude Code', 'Figma MCP', 'React', 'Storybook'],
 }
 
-const philosophyStatements = [
-  'Design is a clarity problem. If the user is confused, something went wrong upstream.',
-  'AI is a force multiplier, not a replacement — it compresses the iteration loop so I can spend time on the decisions that actually require judgment.',
-  'The best design work is invisible. Users should notice what they accomplished, not how they did it.',
-]
-
 export default function About() {
   return (
     <main className="about-page" id="about">
       <div className="container">
         <div className="about-grid">
 
-          {/* Left — bio + philosophy */}
+          {/* Left — bio */}
           <div className="about-left">
             <div className="about-bio__header">
               <img src={portrait} alt="Charles Wood" className="about-bio__portrait" />
@@ -52,19 +46,6 @@ export default function About() {
               </p>
             </div>
 
-            {/* Philosophy */}
-            <section className="about-philosophy" aria-labelledby="philosophy-heading">
-              <p className="label-upper about-philosophy__label" id="philosophy-heading">
-                My approach
-              </p>
-              <div className="about-philosophy__statements">
-                {philosophyStatements.map((statement, i) => (
-                  <blockquote key={i} className="about-philosophy__statement">
-                    {statement}
-                  </blockquote>
-                ))}
-              </div>
-            </section>
           </div>
 
           {/* Right — skills + contact */}
