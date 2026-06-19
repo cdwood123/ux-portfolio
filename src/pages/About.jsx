@@ -1,4 +1,5 @@
 import '../styles/pages/About.css'
+import portrait from '../assets/about/cw_portrait_1.png'
 
 const skills = {
   DESIGN: [
@@ -27,7 +28,10 @@ export default function About() {
 
           {/* Left — bio + philosophy */}
           <div className="about-left">
-            <h1 className="display-lg about-bio__name">Charles Wood</h1>
+            <div className="about-bio__header">
+              <img src={portrait} alt="Charles Wood" className="about-bio__portrait" />
+              <h1 className="display-lg about-bio__name">Charles Wood</h1>
+            </div>
 
             <div className="about-bio__text">
               <p className="about-bio__para">
