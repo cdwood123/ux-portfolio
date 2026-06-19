@@ -4,7 +4,7 @@
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 340px;
+  grid-template-columns: 55fr 42fr;
   gap: var(--space-3xl);
   align-items: start;
 }
@@ -27,11 +27,6 @@
   font-weight: 400;
   color: var(--text-secondary);
   line-height: 1.75;
-}
-
-.about-bio__para--placeholder {
-  color: var(--text-subtle);
-  font-style: italic;
 }
 
 /* Philosophy */

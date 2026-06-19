@@ -1,16 +1,16 @@
 import '../styles/pages/About.css'
 
 const skills = {
-  Design: [
+  DESIGN: [
     'Figma',
-    'UX Research',
     'Design Systems',
+    'Tokens Studio',
     'Prototyping',
+    'UX Research',
     'Information Architecture',
-    'User Testing',
   ],
-  Engineering: ['React', 'HTML/CSS', 'JavaScript', 'Git', 'Vite'],
-  'AI & Tools': ['Claude', 'Cursor', 'ChatGPT', 'Midjourney', 'Framer'],
+  ENGINEERING: ['SolidWorks CSWP', 'CAD', 'FEA', 'CFD', '3D Printing'],
+  'AI & TOOLS': ['Claude', 'Claude Code', 'Figma MCP', 'React', 'Storybook'],
 }
 
 const philosophyStatements = [
@@ -27,20 +27,33 @@ export default function About() {
 
           {/* Left — bio + philosophy */}
           <div className="about-left">
-            <h1 className="display-md about-bio__name">Charles Wood</h1>
+            <h1 className="display-lg about-bio__name">Charles Wood</h1>
 
             <div className="about-bio__text">
-              {/* REPLACE WITH YOUR BIO — paragraph 1 */}
-              <p className="about-bio__para about-bio__para--placeholder">
-                [REPLACE: Opening paragraph — who you are, where you&apos;ve worked, the thread connecting your career. Keep it personal and direct. 3–4 sentences.]
+              <p className="about-bio__para">
+                I'm a product designer with an engineering degree and a decade of experience across
+                physical products, enterprise UX, and branding. I started my career doing structural
+                analysis and mechanical design before pivoting to UX in 2019. Since then I've led
+                design on 20+ freelance projects, from land administration tools deployed in Zambia
+                to payment products for cash-based service businesses. The through-line is the same:
+                complex systems, real constraints, users who need clarity more than decoration.
               </p>
-              {/* REPLACE WITH YOUR BIO — paragraph 2 */}
-              <p className="about-bio__para about-bio__para--placeholder">
-                [REPLACE: Your approach to data products specifically. What draws you to complex, ambiguous problem spaces? What have you learned from shipping in this domain?]
+              <p className="about-bio__para">
+                Technical products attract me because the problems are real. When your users are
+                engineers or field operators, confusion has consequences, and vague wireframes don't
+                survive first contact with the system. I've learned to start with the constraint,
+                not the canvas: what does this user need to accomplish, what does the system allow,
+                and where do those two things fail to meet? That friction is where the design work
+                actually lives.
               </p>
-              {/* REPLACE WITH YOUR BIO — paragraph 3 */}
-              <p className="about-bio__para about-bio__para--placeholder">
-                [REPLACE: Something that makes you different — your AI-native process, your engineering fluency, how you collaborate with data teams. Be specific.]
+              <p className="about-bio__para">
+                What sets me apart in a UX role is that I came from engineering. I'm a certified
+                SolidWorks professional, have done FEA and CFD analysis, and spent years designing
+                to tolerances and manufacturability requirements. That background means I can sit
+                with an engineering team and understand what they're building, not just what they're
+                asking for. Layered on top is an AI-native workflow: I use Claude Code and Figma MCP
+                to compress the design-to-prototype loop so I can stay focused on decisions that
+                actually require judgment.
               </p>
             </div>
 
@@ -51,9 +64,9 @@ export default function About() {
               </p>
               <div className="about-philosophy__statements">
                 {philosophyStatements.map((statement, i) => (
-                  <p key={i} className="about-philosophy__statement">
+                  <blockquote key={i} className="about-philosophy__statement">
                     {statement}
-                  </p>
+                  </blockquote>
                 ))}
               </div>
             </section>
@@ -89,12 +102,11 @@ export default function About() {
                 Contact
               </p>
               <nav className="about-contact__links" aria-label="Contact links">
-                {/* REPLACE: update with your real email and profile URLs */}
-                <a href="mailto:hello@yourname.com" className="about-contact__link">
-                  hello@yourname.com
+                <a href="mailto:cdwood123@gmail.com" className="about-contact__link">
+                  cdwood123@gmail.com
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/cdwood123/"
                   className="about-contact__link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -102,7 +114,7 @@ export default function About() {
                   LinkedIn →
                 </a>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/cdwood123"
                   className="about-contact__link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -111,7 +123,7 @@ export default function About() {
                 </a>
               </nav>
               <p className="about-contact__availability">
-                Open to senior product design roles · Seattle or remote
+                Open to remote product design roles
               </p>
             </section>
 
