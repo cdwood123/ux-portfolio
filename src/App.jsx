@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav'
+import ScrollToTop from './components/ScrollToTop'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import Work from './pages/Work'
@@ -12,6 +13,7 @@ import About from './pages/About'
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Nav />
       <div className="page-wrapper">
         <Routes>
