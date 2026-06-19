@@ -1,5 +1,5 @@
 import '../styles/pages/About.css'
-import portrait from '../assets/about/cw_portrait_1.png'
+import portrait from '../assets/about/cw_portrait_4.png'
 
 const skills = {
   DESIGN: [

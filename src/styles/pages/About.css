@@ -19,8 +19,8 @@
 
 .about-bio__portrait {
   width: 192px;
-  height: 192px;
-  border-radius: var(--radius-lg);
+  height: auto;
+  border-radius: 12px;
   object-fit: cover;
   object-position: center top;
 }
