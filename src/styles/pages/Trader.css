@@ -1,0 +1,135 @@
+.trader-page {
+  padding-bottom: var(--space-3xl);
+}
+
+/* 1100px outer container */
+.trader-outer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-xl) 0;
+}
+
+/* 800px text constraint */
+.trader-text-wrap {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---- Sections ---- */
+
+.trader-section {
+  margin-bottom: var(--space-3xl);
+}
+
+.trader-section__label {
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-sm);
+  border-bottom: 0.5px solid var(--border-default);
+}
+
+.trader-subheading {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.5vw, 26px);
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: var(--space-lg);
+  line-height: 1.3;
+}
+
+.trader-section__body {
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+.trader-section__body p + p {
+  margin-top: var(--space-md);
+}
+
+.trader-status {
+  margin-top: var(--space-lg);
+  font-style: italic;
+}
+
+/* ---- Aside layout (problem space) ---- */
+
+.trader-section--aside {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--space-3xl);
+}
+
+.trader-aside-col {
+  min-width: 0;
+}
+
+/* ---- Figures & images ---- */
+
+.trader-figure {
+  margin: 0;
+}
+
+.trader-figure--hero {
+  margin-bottom: var(--space-3xl);
+}
+
+.trader-figure--wide {
+  margin-top: var(--space-xl);
+}
+
+.trader-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-md);
+}
+
+.trader-caption {
+  margin-top: var(--space-sm);
+  text-align: center;
+}
+
+/* ---- 2-up image grid ---- */
+
+.trader-2up {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  margin-top: var(--space-xl);
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 768px) {
+  .trader-outer {
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+  }
+
+  .trader-section--aside {
+    grid-template-columns: 1fr;
+  }
+
+  .trader-2up {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 480px) {
+  .trader-outer {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+}
