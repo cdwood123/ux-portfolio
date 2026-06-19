@@ -89,10 +89,13 @@ export default function Cashew() {
             <p className="cashew-section__label label-upper">The problem</p>
             <div className="cashew-section__body">
               <p>
-                Local service businesses — plumbers, dog groomers, salon owners — collect payment by
-                text. Cashew sits alongside iMessage, which means every color, every status
-                indicator, every number display has to communicate <em>safe</em>, <em>real</em>,{' '}
-                <em>settled</em> at a glance. That's a token problem before it's a UI problem.
+                Local service businesses, such as plumbers, dog groomers, and salon owners, typically
+                collect payments in cash or through a point-of-sale system. Cashew changes this by
+                allowing them to send payment requests and receive payments via text. Because the
+                service operates within a familiar messaging thread, rather than a separate payment
+                app, every detail—color, status indicator, and number display—must convey a sense of
+                safety and clarity at a glance. This clarity should come from the system itself, not
+                just the screen.
               </p>
             </div>
           </div>
