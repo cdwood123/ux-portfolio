@@ -120,10 +120,10 @@ export default function Trader() {
                 foundation so I was not reinventing date pickers.
               </p>
               <p>
-                I validated directional decisions with a small group of early-stage prop traders
-                over Zoom screen-share sessions. When testers asked for "AI trade analysis," what
-                they actually meant was "I don't understand why I lost." I improved rule-break
-                alert clarity instead of scoping an AI feature I could not support.
+                I validated directional decisions with a small group of early-stage prop traders.
+                When testers asked for "AI trade analysis," what they actually meant was "I don't
+                understand why I lost." I improved rule-break alert clarity instead of scoping
+                an AI feature I could not support.
               </p>
             </div>
           </div>
@@ -135,9 +135,9 @@ export default function Trader() {
                 className="trader-img"
               />
               <figcaption className="caption trader-caption">
-                Traders configure their loss limits and trading rules here. The state system was
-                mapped before any visual work — every screen had to account for how rules shaped
-                live risk calculations.
+                Traders set their loss limits and trading rules here. The state system was
+                mapped prior to any visual work, as every screen had to consider how the rules
+                shaped live risk calculations.
               </figcaption>
             </figure>
             <figure className="trader-figure">
@@ -170,7 +170,7 @@ export default function Trader() {
                 indicators. The solution was a health bar metaphor with a deliberate color
                 progression: cool greens in the safe range, amber at 80%, aggressive red at 95%.
                 Typography scaled proportionally, with the loss figure growing larger and bolder as
-                the situation worsened. Color and scale were the signaling system; everything else
+                the situation worsened. Color and scale were the signaling system and everything else
                 was secondary.
               </p>
             </div>
@@ -182,8 +182,9 @@ export default function Trader() {
               className="trader-img"
             />
             <figcaption className="caption trader-caption">
-              The 80% warning state. Color and typographic scale shift simultaneously — readable
-              from the periphery without requiring the trader to look away from their primary screen.
+              The 80% warning state indicates a simultaneous shift in color and typographic scale, ensuring 
+              readability from the periphery without requiring the trader to divert their attention from 
+              the primary screen.
             </figcaption>
           </figure>
         </section>
