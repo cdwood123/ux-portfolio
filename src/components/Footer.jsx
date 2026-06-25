@@ -26,7 +26,7 @@ export default function Footer() {
             GitHub
           </a>
           <a
-            href="/resume.pdf"
+            href="/charles_wood_resume.pdf"
             className="footer__link caption"
             target="_blank"
             rel="noopener noreferrer"
