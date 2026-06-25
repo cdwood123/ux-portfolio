@@ -1,6 +1,6 @@
-import cashewScreens from '../assets/case-studies/cashew/cashew-screens.png'
-import traderDash from '../assets/case-studies/trader/dash_triptych.png'
-import enumEditBoundary from '../assets/case-studies/enum/Edit_Boundary.png'
+import cashewScreens from '../assets/case-studies/cashew/cashew_mockup_left.png'
+import traderDash from '../assets/case-studies/trader/trading_mockup_front.png'
+import enumEditBoundary from '../assets/case-studies/enum/enum_mockup_front.png'
 
 export const workItems = [
   {
