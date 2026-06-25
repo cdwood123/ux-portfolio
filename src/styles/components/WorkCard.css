@@ -26,6 +26,7 @@
   letter-spacing: 0.06em;
   border-bottom: 1px solid var(--border-default);
   overflow: hidden;
+  padding: 24px;
 }
 
 .work-card__thumb-img {
