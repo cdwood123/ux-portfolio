@@ -10,7 +10,7 @@ export default function Footer() {
         <nav className="footer__links" aria-label="Social links">
           {/* REPLACE: update href values with your real profile URLs */}
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/cdwood123"
             className="footer__link caption"
             target="_blank"
             rel="noopener noreferrer"
