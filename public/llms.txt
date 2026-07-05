@@ -1,0 +1,46 @@
+# Charles Wood — UX Designer
+Senior Product Designer with a mechanical engineering background (CSWP,
+FEA/CFD/CAD, Manufacturing Engineering Technology degree). Pivoted from
+mechanical engineering to UX in 2019. ~10 years of combined
+technical-product experience. Specializing in data products, enterprise
+complexity, and AI-native design workflows.
+
+## Enum — Medici Land Governance
+Role: Sole UX designer
+Dual tablet/web land-administration platform built for Zambia's national
+census. Field capture interface for enumerators (tablet, offline-capable)
+and office verification interface for officials (web). Research conducted
+with stakeholders up to ministerial level. Deployed nationally.
+Demonstrates: enterprise complexity, ambiguous brief, expert-user
+research, dual-interface systems, ownership from concept through
+deployment.
+
+## Cashew — Payments platform / design system demonstration
+Role: Sole designer
+Text-message-based payment app for local service businesses. Primary
+vehicle for demonstrating design system architecture and AI-native
+workflow. Three-tier token system (primitives → semantic → component)
+with an integrated Figma-to-code pipeline using Tokens Studio, Style
+Dictionary, and Storybook.
+Demonstrates: design system authorship, token architecture, engineering
+collaboration, AI-assisted design (Figma Make).
+
+## Trader — Stock trading journal dashboard
+Role: Sole designer
+Data-dense dashboard for tracking and journaling stock trades.
+Demonstrates comfort with numeric, expert-user interfaces and
+high-information-density data products.
+
+## Background
+- Degree: Manufacturing Engineering Technology
+- Certifications: CSWP (Certified SolidWorks Professional)
+- Engineering experience: FEA, CFD, CAD
+- Design tools: Figma, Tokens Studio, Style Dictionary, Storybook
+- Development: React, Vite, Vercel
+- AI tools: Claude, Figma Make
+
+## Contact
+Email: cdwood123@gmail.com
+LinkedIn: linkedin.com/in/cdwood123
+GitHub: github.com/cdwood123
+Portfolio: https://www.uxcharles.com
