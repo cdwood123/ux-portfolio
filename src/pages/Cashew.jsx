@@ -153,21 +153,21 @@ export default function Cashew() {
               <div className="cashew-token-block">
                 <p className="cashew-token-block__label">Transaction states</p>
                 <p className="cashew-token-block__desc">
-                  <code>color/status/{'{'}paid|pending|failed|refunded|overdue{'}'}/{'{'}bg|border|text|icon{'}'}</code> —
+                  <code>{'color/status/{paid|pending|failed|refunded|overdue}/{bg|border|text|icon}'}</code> —
                   30 tokens covering every visual property of every payment state.
                 </p>
               </div>
               <div className="cashew-token-block">
                 <p className="cashew-token-block__label">Financial display</p>
                 <p className="cashew-token-block__desc">
-                  <code>color/financial/{'{'}positive|negative|display|neutral{'}'}</code> — green means
+                  <code>{'color/financial/{positive|negative|display|neutral}'}</code> — green means
                   gain, red means loss. These aren&apos;t preferences, they&apos;re contracts.
                 </p>
               </div>
               <div className="cashew-token-block">
                 <p className="cashew-token-block__label">Trust signals</p>
                 <p className="cashew-token-block__desc">
-                  <code>color/trust/{'{'}secure-bg|secure-border|secure-icon|secure-text{'}'}</code> —
+                  <code>{'color/trust/{secure-bg|secure-border|secure-icon|secure-text}'}</code> —
                   added mid-build when PaymentAmountDisplay needed explicit visual reinforcement.
                 </p>
               </div>
@@ -218,7 +218,7 @@ export default function Cashew() {
             <ul className="cashew-callout-list">
               <li className="cashew-callout-item">
                 Trust token reference paths were broken on first import (
-                <code>{'{'}trust.*{'}'}</code> instead of <code>{'{'}color.trust.*{'}'}</code>) —
+                <code>{'{trust.*}'}</code> instead of <code>{'{color.trust.*}'}</code>) —
                 Tokens Studio accepted them silently.
               </li>
               <li className="cashew-callout-item">

@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/((?!.*\\.[a-zA-Z0-9]+$).*)",
+      "source": "/((?!work$|work/cashew$|work/enum$|work/trader$|about$|.*\\.[a-zA-Z0-9]+$).*)",
       "destination": "/index.html"
     }
   ]
