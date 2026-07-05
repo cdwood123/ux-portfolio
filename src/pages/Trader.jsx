@@ -1,4 +1,5 @@
 import CaseStudyHero from '../components/CaseStudyHero'
+import { CaseSection, CaseText, CaseBody, CaseFigure, CaseTwoUp } from '../components/CaseStudyLayout'
 import imgDashTriptych from '../assets/case-studies/trader/dash_triptych.png'
 import imgRiskDesk from '../assets/case-studies/trader/risk_desk_mockup.png'
 import imgRules from '../assets/case-studies/trader/rules.png'
@@ -11,7 +12,7 @@ import '../styles/pages/Trader.css'
 
 export default function Trader() {
   return (
-    <main className="trader-page">
+    <main className="case-page">
       <CaseStudyHero
         title="Prop Trader Risk Journal"
         hook="An intervention system that surfaces account risk in real time — designed for peripheral vision"
@@ -22,22 +23,19 @@ export default function Trader() {
         ]}
       />
 
-      <div className="trader-outer">
+      <div className="case-outer">
 
         {/* Hero image */}
-        <figure className="trader-figure trader-figure--hero">
-          <img
-            src={imgDashTriptych}
-            alt="Three-panel dashboard showing the risk journal in its safe, warning, and critical states"
-            className="trader-img"
-          />
-        </figure>
+        <CaseFigure
+          variant="hero"
+          src={imgDashTriptych}
+          alt="Three-panel dashboard showing the risk journal in its safe, warning, and critical states"
+        />
 
         {/* Section — Executive Summary */}
-        <section className="trader-section">
-          <div className="trader-text-wrap">
-            <p className="trader-section__label label-upper">Executive summary</p>
-            <div className="trader-section__body">
+        <CaseSection>
+          <CaseText label="Executive summary">
+            <CaseBody>
               <p>
                 Prop firm traders blow up accounts not because they lack knowledge, but because they
                 make decisions while emotionally compromised. Existing tools are retrospective; they
@@ -50,15 +48,15 @@ export default function Trader() {
                 is a high-fidelity prototype tested with active traders, with a validated interaction
                 model that reduced override decisions in the critical warning state during testing.
               </p>
-            </div>
-          </div>
-        </section>
+            </CaseBody>
+          </CaseText>
+        </CaseSection>
 
         {/* Section — The Problem Space */}
-        <section className="trader-section trader-section--aside">
+        <CaseSection className="trader-section--aside">
           <div className="trader-aside-col">
-            <p className="trader-section__label label-upper">The problem space</p>
-            <div className="trader-section__body">
+            <p className="case-section__label label-upper">The problem space</p>
+            <CaseBody>
               <p>
                 Prop trading firms impose daily loss limits. Traders who breach them lose their
                 funded account. Blow-up posts on Reddit and Discord follow a consistent pattern:
@@ -79,30 +77,24 @@ export default function Trader() {
               <p>
                 The key insight came from reading hundreds of raw post-blowup posts and Discord
                 threads. Traders describe the moment of bad decision-making in nearly identical
-                language: "Tilt." "Revenge trade." "I knew I should stop." The problem was not
+                language: &quot;Tilt.&quot; &quot;Revenge trade.&quot; &quot;I knew I should stop.&quot; The problem was not
                 information; it was intervention timing.
               </p>
-            </div>
+            </CaseBody>
           </div>
-          <figure className="trader-figure">
-            <img
-              src={imgRiskDesk}
-              alt="Risk journal on a secondary monitor beside a trader's primary charting screen"
-              className="trader-img"
-            />
-            <figcaption className="caption trader-caption">
-              The journal lives on a secondary screen beside the trader's primary charting
+          <CaseFigure
+            src={imgRiskDesk}
+            alt="Risk journal on a secondary monitor beside a trader's primary charting screen"
+            caption="The journal lives on a secondary screen beside the trader's primary charting
               environment. Any design that demanded active attention would be ignored at the
-              moments it mattered most.
-            </figcaption>
-          </figure>
-        </section>
+              moments it mattered most."
+          />
+        </CaseSection>
 
         {/* Section — Strategy and Approach */}
-        <section className="trader-section">
-          <div className="trader-text-wrap">
-            <p className="trader-section__label label-upper">Strategy and approach</p>
-            <div className="trader-section__body">
+        <CaseSection>
+          <CaseText label="Strategy and approach">
+            <CaseBody>
               <p>
                 I used AI to synthesize Discord and subreddit posts into an emotional pattern map,
                 which compressed what would have been weeks of manual tagging into a few days. That
@@ -121,45 +113,36 @@ export default function Trader() {
               </p>
               <p>
                 I validated directional decisions with a small group of early-stage prop traders.
-                When testers asked for "AI trade analysis," what they actually meant was "I don't
-                understand why I lost." I improved rule-break alert clarity instead of scoping
+                When testers asked for &quot;AI trade analysis,&quot; what they actually meant was &quot;I don&apos;t
+                understand why I lost.&quot; I improved rule-break alert clarity instead of scoping
                 an AI feature I could not support.
               </p>
-            </div>
-          </div>
-          <div className="trader-2up">
-            <figure className="trader-figure">
-              <img
-                src={imgRules}
-                alt="Rules configuration screen where traders set their daily loss limits"
-                className="trader-img"
-              />
-              <figcaption className="caption trader-caption">
-                Traders set their loss limits and trading rules here. The state system was
+            </CaseBody>
+          </CaseText>
+          <CaseTwoUp>
+            <CaseFigure
+              src={imgRules}
+              alt="Rules configuration screen where traders set their daily loss limits"
+              caption="Traders set their loss limits and trading rules here. The state system was
                 mapped prior to any visual work, as every screen had to consider how the rules
-                shaped live risk calculations.
-              </figcaption>
-            </figure>
-            <figure className="trader-figure">
-              <img
-                src={imgHistory}
-                alt="Trade history log showing past sessions with risk annotations"
-                className="trader-img"
-              />
-              <figcaption className="caption trader-caption">
-                The history view gives traders a retrospective record of sessions, including the
-                emotional and rule-break context that standard P&amp;L logs omit.
-              </figcaption>
-            </figure>
-          </div>
-        </section>
+                shaped live risk calculations."
+            />
+            <CaseFigure
+              src={imgHistory}
+              alt="Trade history log showing past sessions with risk annotations"
+              caption="The history view gives traders a retrospective record of sessions, including the
+                emotional and rule-break context that standard P&L logs omit."
+            />
+          </CaseTwoUp>
+        </CaseSection>
 
         {/* Section — Key Decisions */}
-        <section className="trader-section">
-          <div className="trader-text-wrap">
-            <p className="trader-section__label label-upper">Key decisions and iterations</p>
-            <h2 className="trader-subheading">Peripheral vision as the primary design constraint</h2>
-            <div className="trader-section__body">
+        <CaseSection>
+          <CaseText
+            label="Key decisions and iterations"
+            heading="Peripheral vision as the primary design constraint"
+          >
+            <CaseBody>
               <p>
                 Traders watch their primary screen. The journal sits in their peripheral field. If
                 risk status was not readable at 20 degrees off-center, the interface had failed its
@@ -173,29 +156,24 @@ export default function Trader() {
                 the situation worsened. Color and scale were the signaling system and everything else
                 was secondary.
               </p>
-            </div>
-          </div>
-          <figure className="trader-figure trader-figure--wide">
-            <img
-              src={imgWarning}
-              alt="Dashboard in the 80% drawdown warning state — amber color shift and enlarged loss figure"
-              className="trader-img"
-            />
-            <figcaption className="caption trader-caption">
-              The 80% warning state indicates a simultaneous shift in color and typographic scale, ensuring 
-              readability from the periphery without requiring the trader to divert their attention from 
-              the primary screen.
-            </figcaption>
-          </figure>
-        </section>
+            </CaseBody>
+          </CaseText>
+          <CaseFigure
+            variant="wide"
+            src={imgWarning}
+            alt="Dashboard in the 80% drawdown warning state — amber color shift and enlarged loss figure"
+            caption="The 80% warning state indicates a simultaneous shift in color and typographic scale, ensuring
+              readability from the periphery without requiring the trader to divert their attention from
+              the primary screen."
+          />
+        </CaseSection>
 
-        <section className="trader-section">
-          <div className="trader-text-wrap">
-            <h2 className="trader-subheading">The hard stop screen and intentional friction</h2>
-            <div className="trader-section__body">
+        <CaseSection>
+          <CaseText heading="The hard stop screen and intentional friction">
+            <CaseBody>
               <p>
                 When a trader hits their daily limit, the interface enters lockout mode. To
-                continue, they have to type a confirmation phrase: "I am breaking my rules."
+                continue, they have to type a confirmation phrase: &quot;I am breaking my rules.&quot;
               </p>
               <p>
                 A passive confirmation dialog does not create enough resistance for someone in an
@@ -208,67 +186,51 @@ export default function Trader() {
                 it. In testing, this screen produced the longest pause of any interaction in the
                 prototype. That was the goal.
               </p>
-            </div>
-          </div>
-          <figure className="trader-figure trader-figure--wide">
-            <img
-              src={imgLockout}
-              alt="Hard lockout screen requiring the trader to type 'I am breaking my rules' to continue"
-              className="trader-img"
-            />
-            <figcaption className="caption trader-caption">
-              The lockout screen. Stark by design — the visual break from the normal interface
+            </CaseBody>
+          </CaseText>
+          <CaseFigure
+            variant="wide"
+            src={imgLockout}
+            alt="Hard lockout screen requiring the trader to type 'I am breaking my rules' to continue"
+            caption="The lockout screen. Stark by design — the visual break from the normal interface
               is the intervention. The typed phrase forces a conscious, verbal acknowledgment
-              before any further trading action is possible.
-            </figcaption>
-          </figure>
-        </section>
+              before any further trading action is possible."
+          />
+        </CaseSection>
 
         {/* Section — Impact and Learnings */}
-        <section className="trader-section">
-          <div className="trader-text-wrap">
-            <p className="trader-section__label label-upper">Impact and learnings</p>
-            <div className="trader-section__body">
+        <CaseSection>
+          <CaseText label="Impact and learnings">
+            <CaseBody>
               <p>
                 The prototype was validated with active traders. During testing, the critical state
                 color shift was read correctly without instruction by every participant. The hard
                 stop screen reduced immediate override attempts compared to a standard confirmation
                 modal tested in an earlier iteration.
               </p>
-            </div>
-          </div>
-          <div className="trader-2up">
-            <figure className="trader-figure">
-              <img
-                src={imgReview}
-                alt="Post-session review screen with annotated trade timeline and rule-break flags"
-                className="trader-img"
-              />
-              <figcaption className="caption trader-caption">
-                The post-session review surfaces rule breaks in context, giving traders a structured
-                way to examine the decisions that led to losses rather than just the losses themselves.
-              </figcaption>
-            </figure>
-            <figure className="trader-figure">
-              <img
-                src={imgLogTrade}
-                alt="Log trade entry panel with fields for emotional state and rule adherence"
-                className="trader-img"
-              />
-              <figcaption className="caption trader-caption">
-                The trade logging panel captures emotional state alongside standard trade data.
-                That pairing is what makes the retrospective review useful — P&amp;L alone doesn't
-                explain why a decision was made.
-              </figcaption>
-            </figure>
-          </div>
-        </section>
+            </CaseBody>
+          </CaseText>
+          <CaseTwoUp>
+            <CaseFigure
+              src={imgReview}
+              alt="Post-session review screen with annotated trade timeline and rule-break flags"
+              caption="The post-session review surfaces rule breaks in context, giving traders a structured
+                way to examine the decisions that led to losses rather than just the losses themselves."
+            />
+            <CaseFigure
+              src={imgLogTrade}
+              alt="Log trade entry panel with fields for emotional state and rule adherence"
+              caption="The trade logging panel captures emotional state alongside standard trade data.
+                That pairing is what makes the retrospective review useful — P&L alone doesn't
+                explain why a decision was made."
+            />
+          </CaseTwoUp>
+        </CaseSection>
 
         {/* Section — What I'd Do Differently */}
-        <section className="trader-section">
-          <div className="trader-text-wrap">
-            <p className="trader-section__label label-upper">What I'd do differently</p>
-            <div className="trader-section__body">
+        <CaseSection>
+          <CaseText label="What I'd do differently">
+            <CaseBody>
               <p>
                 The test cohort was early-stage traders. Experienced prop traders — the ones closest
                 to real account risk — would have been higher-value participants. I would prioritize
@@ -281,15 +243,15 @@ export default function Trader() {
               </p>
               <p>
                 The broader design principle this project reinforced: for any interface used by
-                domain experts under cognitive load, the question is not "what information do we
-                show?" It is "what is the minimum a user needs to read to know if they are in
-                danger?" That question applies equally to trading, industrial process monitoring,
+                domain experts under cognitive load, the question is not &quot;what information do we
+                show?&quot; It is &quot;what is the minimum a user needs to read to know if they are in
+                danger?&quot; That question applies equally to trading, industrial process monitoring,
                 and any other high-stakes data environment.
               </p>
               <p className="trader-status">Project status: High-fidelity prototype validated. MVP development in progress.</p>
-            </div>
-          </div>
-        </section>
+            </CaseBody>
+          </CaseText>
+        </CaseSection>
 
       </div>
     </main>

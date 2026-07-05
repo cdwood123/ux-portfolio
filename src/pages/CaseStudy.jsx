@@ -24,10 +24,12 @@ export default function CaseStudy() {
           /* REPLACE: one sentence — "what changed because of this work" */
           `[REPLACE: What changed for users or the business because of this project.]`
         }
-        company={item.company}
-        role={item.role}
-        year={item.year}
-        duration={item.duration}
+        metaItems={[
+          { label: 'Company', value: item.company },
+          { label: 'Role', value: item.role },
+          { label: 'Year', value: item.year },
+          { label: 'Duration', value: item.duration },
+        ]}
       />
 
       <div className="container">

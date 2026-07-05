@@ -1,4 +1,3 @@
-// force redeploy
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav'
 import ScrollToTop from './components/ScrollToTop'

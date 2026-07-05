@@ -8,7 +8,6 @@ export default function Footer() {
           Designed &amp; built by Charles Wood · 2026
         </p>
         <nav className="footer__links" aria-label="Social links">
-          {/* REPLACE: update href values with your real profile URLs */}
           <a
             href="https://www.linkedin.com/in/cdwood123"
             className="footer__link caption"

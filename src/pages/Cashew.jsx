@@ -1,4 +1,5 @@
 import CaseStudyHero from '../components/CaseStudyHero'
+import { CaseSection, CaseText, CaseBody, CaseFigure } from '../components/CaseStudyLayout'
 import imgScreens from '../assets/case-studies/cashew/cashew-screens.png'
 import imgVariablesPanel from '../assets/case-studies/cashew/cashew-variables-panel.png'
 import imgTokenJson from '../assets/case-studies/cashew/cashew-token-json.png'
@@ -62,7 +63,7 @@ function PipelineDiagram() {
 
 export default function Cashew() {
   return (
-    <main className="cashew-page">
+    <main className="case-page">
       <CaseStudyHero
         title="Cashew"
         hook="A payment design system built token-first — from JSON to deployed component documentation."
@@ -72,22 +73,19 @@ export default function Cashew() {
         ]}
       />
 
-      <div className="cashew-outer">
+      <div className="case-outer">
 
         {/* 1. Hero image */}
-        <figure className="cashew-figure cashew-figure--hero">
-          <img
-            src={imgScreens}
-            alt="Cashew payment confirmation and transaction history screens"
-            className="cashew-img"
-          />
-        </figure>
+        <CaseFigure
+          variant="hero"
+          src={imgScreens}
+          alt="Cashew payment confirmation and transaction history screens"
+        />
 
         {/* 2. The Problem */}
-        <section className="cashew-section">
-          <div className="cashew-text-wrap">
-            <p className="cashew-section__label label-upper">The problem</p>
-            <div className="cashew-section__body">
+        <CaseSection>
+          <CaseText label="The problem">
+            <CaseBody>
               <p>
                 Local service businesses, such as plumbers, dog groomers, and salon owners, typically
                 collect payments in cash or through a point-of-sale system. Cashew changes this by
@@ -97,19 +95,17 @@ export default function Cashew() {
                 safety and clarity at a glance. This clarity should come from the system itself, not
                 just the screen.
               </p>
-            </div>
-          </div>
-        </section>
+            </CaseBody>
+          </CaseText>
+        </CaseSection>
 
         {/* 3. The Pipeline */}
-        <section className="cashew-section">
-          <div className="cashew-text-wrap">
-            <p className="cashew-section__label label-upper">The pipeline</p>
-          </div>
+        <CaseSection>
+          <CaseText label="The pipeline" />
           <div className="cashew-diagram">
             <PipelineDiagram />
           </div>
-          <div className="cashew-text-wrap">
+          <CaseText>
             <ol className="cashew-pipeline-steps">
               <li className="cashew-pipeline-step">
                 <span className="cashew-pipeline-step__title">cashew-tokens.json</span>
@@ -139,25 +135,20 @@ export default function Cashew() {
                 </span>
               </li>
             </ol>
-          </div>
-        </section>
+          </CaseText>
+        </CaseSection>
 
         {/* 4. Token Architecture */}
-        <section className="cashew-section">
-          <div className="cashew-text-wrap">
-            <p className="cashew-section__label label-upper">Token architecture</p>
-          </div>
-          <figure className="cashew-figure cashew-figure--wide">
-            <img
-              src={imgVariablesPanel}
-              alt="Figma Variables inspector showing Primitives and Semantic collections"
-              className="cashew-img"
-            />
-            <figcaption className="caption cashew-caption">
-              202 variables across two collections, published as a shared library
-            </figcaption>
-          </figure>
-          <div className="cashew-text-wrap">
+        <CaseSection>
+          <CaseText label="Token architecture" />
+          <CaseFigure
+            variant="wide"
+            className="cashew-figure--wide"
+            src={imgVariablesPanel}
+            alt="Figma Variables inspector showing Primitives and Semantic collections"
+            caption="202 variables across two collections, published as a shared library"
+          />
+          <CaseText>
             <div className="cashew-token-blocks">
               <div className="cashew-token-block">
                 <p className="cashew-token-block__label">Transaction states</p>
@@ -170,7 +161,7 @@ export default function Cashew() {
                 <p className="cashew-token-block__label">Financial display</p>
                 <p className="cashew-token-block__desc">
                   <code>color/financial/{'{'}positive|negative|display|neutral{'}'}</code> — green means
-                  gain, red means loss. These aren't preferences, they're contracts.
+                  gain, red means loss. These aren&apos;t preferences, they&apos;re contracts.
                 </p>
               </div>
               <div className="cashew-token-block">
@@ -181,57 +172,48 @@ export default function Cashew() {
                 </p>
               </div>
             </div>
-          </div>
-          <figure className="cashew-figure cashew-figure--wide">
-            <img
-              src={imgTokenJson}
-              alt="cashew-tokens.json open in editor showing primitive-to-semantic alias chain"
-              className="cashew-img"
-            />
-            <figcaption className="caption cashew-caption">
-              Tokens authored in JSON, imported via Tokens Studio — not Figma's native import
-            </figcaption>
-          </figure>
-        </section>
+          </CaseText>
+          <CaseFigure
+            variant="wide"
+            className="cashew-figure--wide"
+            src={imgTokenJson}
+            alt="cashew-tokens.json open in editor showing primitive-to-semantic alias chain"
+            caption="Tokens authored in JSON, imported via Tokens Studio — not Figma's native import"
+          />
+        </CaseSection>
 
         {/* 5. Components in Production */}
-        <section className="cashew-section">
-          <div className="cashew-text-wrap">
-            <p className="cashew-section__label label-upper">Components in production</p>
-          </div>
-          <figure className="cashew-figure cashew-figure--wide">
-            <img
-              src={imgStorybook}
-              alt="Storybook showing PaymentAmountDisplay stories and Docs page"
-              className="cashew-img"
-            />
-            <figcaption className="caption cashew-caption">
-              Six named stories plus auto-docs, deployed to storybook.uxcharles.com
-            </figcaption>
-          </figure>
-          <div className="cashew-text-wrap">
-            <div className="cashew-section__body">
+        <CaseSection>
+          <CaseText label="Components in production" />
+          <CaseFigure
+            variant="wide"
+            className="cashew-figure--wide"
+            src={imgStorybook}
+            alt="Storybook showing PaymentAmountDisplay stories and Docs page"
+            caption="Six named stories plus auto-docs, deployed to storybook.uxcharles.com"
+          />
+          <CaseText>
+            <CaseBody>
               <p>
                 Five components built and bound: StatusBadge, TransactionRow, Button, Input,
                 PaymentAmountDisplay. All colors and spacing reference semantic variables. No
-                hardcoded values. Button and Input were sourced from shadcn/ui's Figma kit and
+                hardcoded values. Button and Input were sourced from shadcn/ui&apos;s Figma kit and
                 remapped to Cashew semantic variables — because real design system work means
                 inheriting commodity components and making them yours.
               </p>
-            </div>
-          </div>
-        </section>
+            </CaseBody>
+          </CaseText>
+        </CaseSection>
 
         {/* 6. What the AI Did (and What It Didn't) */}
-        <section className="cashew-section">
-          <div className="cashew-text-wrap">
-            <p className="cashew-section__label label-upper">What the AI did (and what it didn't)</p>
-            <div className="cashew-section__body">
+        <CaseSection>
+          <CaseText label="What the AI did (and what it didn't)">
+            <CaseBody>
               <p>
                 Claude generated the token JSON, bound Variables to components via MCP, and placed
                 Lucide icons by fetching SVGs from npm.
               </p>
-            </div>
+            </CaseBody>
             <p className="cashew-callout-header">What required human judgment to catch:</p>
             <ul className="cashew-callout-list">
               <li className="cashew-callout-item">
@@ -244,23 +226,22 @@ export default function Cashew() {
                 nothing in Figma.
               </li>
               <li className="cashew-callout-item">
-                Claude Code's success messages confirm a binding was written, not that the alias
+                Claude Code&apos;s success messages confirm a binding was written, not that the alias
                 chain resolves. Verification is a separate step.
               </li>
             </ul>
-            <div className="cashew-section__body">
+            <CaseBody>
               <p>
                 These are documented, not hidden. Production-ready systems account for where the
                 tooling fails.
               </p>
-            </div>
-          </div>
-        </section>
+            </CaseBody>
+          </CaseText>
+        </CaseSection>
 
         {/* 7. Outcomes */}
-        <section className="cashew-section">
-          <div className="cashew-text-wrap">
-            <p className="cashew-section__label label-upper">Outcomes</p>
+        <CaseSection>
+          <CaseText label="Outcomes">
             <div className="cashew-stats">
               <div className="cashew-stat">
                 <p className="cashew-stat__number">202</p>
@@ -287,8 +268,8 @@ export default function Cashew() {
             >
               View Storybook →
             </a>
-          </div>
-        </section>
+          </CaseText>
+        </CaseSection>
 
       </div>
     </main>

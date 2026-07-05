@@ -1,38 +1,9 @@
-import { Link } from 'react-router-dom'
 import Button from '../components/Button'
 import StatCard from '../components/StatCard'
 import WorkCard from '../components/WorkCard'
-import LabCard from '../components/LabCard'
 import SectionHeader from '../components/SectionHeader'
 import { workItems } from '../data/work'
 import '../styles/pages/Home.css'
-
-const labPreview = [
-  {
-    id: 'flows',
-    icon: 'ti ti-sparkles',
-    type: 'experiment',
-    title: 'AI-generated user flows',
-    description: 'Prototyping with Claude to compress weeks of iteration.',
-    tag: 'AI process',
-  },
-  {
-    id: 'viz',
-    icon: 'ti ti-chart-dots',
-    type: 'experiment',
-    title: 'Data viz experiments',
-    description: 'Exploring new ways to make dense data legible.',
-    tag: 'Data clarity',
-  },
-  {
-    id: 'code',
-    icon: 'ti ti-code',
-    type: 'prototype',
-    title: 'Built in code',
-    description: 'Prototypes that live in the browser, not just in Figma.',
-    tag: 'Engineering',
-  },
-]
 
 export default function Home() {
   return (
@@ -96,21 +67,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Lab preview */}
-      {/* <section className="lab-preview" aria-label="Lab experiments">
-        <div className="container">
-          <SectionHeader
-            label="Lab — experiments &amp; explorations"
-            link={{ to: '/lab', text: 'Open lab →' }}
-          />
-          <div className="lab-strip">
-            {labPreview.map((item) => (
-              <LabCard key={item.id} {...item} preview />
-            ))}
-          </div>
-        </div>
-      </section> */}
 
       {/* About strip */}
       <section className="about-strip" aria-label="About">

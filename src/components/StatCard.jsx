@@ -1,27 +1,20 @@
 import '../styles/components/StatCard.css'
 
-const ACCENTS = ['+', '→', '×']
+const ACCENT_SPLIT = /([+→×])/
 
 function renderValue(value) {
-  const parts = []
-  let current = ''
-
-  for (let i = 0; i < value.length; i++) {
-    if (ACCENTS.includes(value[i])) {
-      if (current) parts.push(current)
-      parts.push(
+  return value
+    .split(ACCENT_SPLIT)
+    .filter(Boolean)
+    .map((part, i) =>
+      ACCENT_SPLIT.test(part) ? (
         <span key={i} className="stat-card__accent">
-          {value[i]}
+          {part}
         </span>
+      ) : (
+        part
       )
-      current = ''
-    } else {
-      current += value[i]
-    }
-  }
-
-  if (current) parts.push(current)
-  return parts
+    )
 }
 
 export default function StatCard({ value, label }) {

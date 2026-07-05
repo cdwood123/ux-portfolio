@@ -42,7 +42,7 @@ export default function About() {
               <p className="about-bio__para">
                 I incorporate AI tools like Claude Code and Figma MCP into my design process to
                 speed up prototyping while allowing me to focus on the critical challenges that
-                require a designer's insight.
+                require a designer&apos;s insight.
               </p>
             </div>
 

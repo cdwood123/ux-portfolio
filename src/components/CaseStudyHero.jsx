@@ -1,13 +1,6 @@
 import '../styles/components/CaseStudyHero.css'
 
-export default function CaseStudyHero({ title, hook, company, role, year, duration, metaItems }) {
-  const meta = metaItems || [
-    { label: 'Company', value: company },
-    { label: 'Role', value: role },
-    { label: 'Year', value: year },
-    { label: 'Duration', value: duration },
-  ]
-
+export default function CaseStudyHero({ title, hook, metaItems }) {
   return (
     <section className="cs-hero">
       <div className="container">
@@ -15,7 +8,7 @@ export default function CaseStudyHero({ title, hook, company, role, year, durati
         <h1 className="cs-hero__title display-lg">{title}</h1>
         <p className="cs-hero__hook">{hook}</p>
         <div className="cs-hero__meta">
-          {meta.map(({ label, value, href }) => (
+          {metaItems.map(({ label, value, href }) => (
             <div key={label} className="cs-hero__meta-item">
               <span className="cs-hero__meta-label">{label}</span>
               <span className="cs-hero__meta-value">

@@ -17,7 +17,6 @@ export default function Work() {
         <header className="work-page__header">
           <h1 className="display-lg">Selected work</h1>
           <p className="work-page__desc">
-            {/* REPLACE: one-line description of your work focus */}
             A decade of shipping data products, from 0-to-1 definitions to mature design systems.
           </p>
         </header>
