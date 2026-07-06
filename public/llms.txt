@@ -15,7 +15,7 @@
 - [Cashew](https://www.uxcharles.com/work/cashew): Payments platform and
   design system demonstration. Three-tier token architecture (primitives →
   semantic → component) with an integrated Figma-to-code pipeline using
-  Tokens Studio, Style Dictionary, and Storybook.
+  Tokens Studio and Storybook.
 - [Trader](https://www.uxcharles.com/work/trader): Stock trading journal
   dashboard. Data-dense, numeric, expert-user interface.
 
